@@ -1,0 +1,38 @@
+.what {
+    padding: 40px 0 40px;
+    background: url('../img/what-bg.jpg') no-repeat;
+    background-position: left bottom;
+    background-size: cover;
+    color: #ffffff;
+    &__body {
+        display: flex;
+    }
+    &__block {
+        width: 30%;
+        padding: 20px 0;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+    }
+    &__item {
+        width: 29%;
+        position: relative;
+        background: #32323f;
+        padding: 20px;
+        margin: 2% 2%;
+    }
+    &__num {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        opacity: 0.2;
+    }
+    &__icon {
+        width: 72px;
+        svg {
+            max-width: 100%;
+        }
+    }
+}

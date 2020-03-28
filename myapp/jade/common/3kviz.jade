@@ -1,0 +1,187 @@
+section.kviz#kviz
+    .wrap
+        .kviz__title Ответьте на 5 вопросов и получите подборку из трех доступных к покупке автомобилей
+        .kviz-qa
+            form(class="quizForm")
+                .step-slide.step-slide--active
+                    .step__body
+                        .step-slide__title Какой у вас бюджет на покупку авто?
+                        .kviz__ans.question__ans--radio
+                            label.pick-item(for="step1-1")
+                                input#step1-1.pick-item__input(type='radio', name='question1', value='До $12 000')
+                                span.pick-item__label До $12 000
+                            label.pick-item(for="step1-2")
+                                input#step1-2.pick-item__input(type='radio', name='question1', value='От $12 000 до $25 000')
+                                span.pick-item__label От $12 000 до $25 000
+                            label.pick-item(for="step1-3")
+                                input#step1-3.pick-item__input(type='radio', name='question1', value='От $25 000 до $ 50 000')
+                                span.pick-item__label От $25 000 до $ 50 000 
+                            label.pick-item(for="step1-4")
+                                input#step1-4.pick-item__input(type='radio', name='question1', value='От $50 000 и более')
+                                span.pick-item__label От $50 000 и более
+                        .step-slide__bottom
+                            .kviz-progress
+                                .kviz-progress__title 1 вопрос из 5
+                                .kviz-progress__steps
+                                    .kviz-progress__item.active
+                                    .kviz-progress__item
+                                    .kviz-progress__item
+                                    .kviz-progress__item
+                                    .kviz-progress__item
+                            .prev-next-container
+                                .kviz__error
+                                a.btn.btn-next.qa-next(href='#') Далее
+                    .step__sidebar
+                        img(src="img/qa1.jpg", alt="авто")
+                .step-slide
+                    .step__body
+                        .step-slide__title Как вы будете использовать  автомобиль чаще всего?
+                        .kviz__ans.question__ans--text
+                            label.pick-item(for="step2-1")
+                                input#step2-1.pick-item__input(type='radio', name='question2', value='Для частого  передвижения по городу')
+                                span.pick-item__label Для частого передвижения по городу
+                            label.pick-item(for="step2-2")
+                                input#step2-2.pick-item__input(type='radio', name='question2', value='Для поездок в пригород  и сельскую местность')
+                                span.pick-item__label Для поездок в пригород  и сельскую местность
+                            label.pick-item(for="step2-3")
+                                input#step2-3.pick-item__input(type='radio', name='question2', value='Для дальних поездок')
+                                span.pick-item__label Для дальних поездок
+                        .step-slide__bottom
+                            .kviz-progress
+                                .kviz-progress__title 2 вопрос из 5
+                                .kviz-progress__steps
+                                    .kviz-progress__item.active
+                                    .kviz-progress__item.active
+                                    .kviz-progress__item
+                                    .kviz-progress__item
+                                    .kviz-progress__item
+                            .prev-next-container
+                                .kviz__error
+                                a.btn.btn-next.qa-next(href='#') Далее
+                    .step__sidebar
+                        img(src="img/qa2.jpg", alt="авто")
+                .step-slide
+                    .step__body
+                        .step-slide__title Какой ежемесячный бюджет вы можете выделять на обслуживание авто?
+                        .kviz__ans.question__ans--text
+                            label.pick-item(for="step3-1")
+                                input#step3-1.pick-item__input(type='radio', name='question3', value='До $50')
+                                span.pick-item__label  До $50
+                            label.pick-item(for="step3-2")
+                                input#step3-2.pick-item__input(type='radio', name='question3', value='До $100')
+                                span.pick-item__label До $100
+                            label.pick-item(for="step3-3")
+                                input#step3-3.pick-item__input(type='radio', name='question3', value='До $150')
+                                span.pick-item__label До $150
+                        .step-slide__bottom
+                            .kviz-progress
+                                .kviz-progress__title 3 вопрос из 5
+                                .kviz-progress__steps
+                                    .kviz-progress__item.active
+                                    .kviz-progress__item.active
+                                    .kviz-progress__item.active
+                                    .kviz-progress__item
+                                    .kviz-progress__item
+                            .prev-next-container
+                                .kviz__error
+                                a.btn.btn-next.qa-next(href='#') Далее
+                    .step__sidebar
+                        img(src="img/qa3.jpg", alt="авто")
+                .step-slide
+                    .step__body
+                        .step-slide__title Выберите один или несколько пунктов, которые соответствуют вашей ситуации
+                        .kviz__ans.question__ans--text
+                            label.pick-item(for="step4-1")
+                                input#step4-1.pick-item__input(type='checkbox', name='question4', value='Я буду возить в авто ребенка  или нескольких детей ')
+                                span.pick-item__label Я буду возить в авто ребенка  или нескольких детей 
+                            label.pick-item(for="step4-2")
+                                input#step4-2.pick-item__input(type='checkbox', name='question4', value='Я буду возить в авто собаку  или другое крупное животное')
+                                span.pick-item__label Я буду возить в авто собаку  или другое крупное животное
+                            label.pick-item(for="step4-3")
+                                input#step4-3.pick-item__input(type='checkbox', name='question4', value='Я хочу путешествовать  на автомобиле ')
+                                span.pick-item__label Я хочу путешествовать  на автомобиле 
+                            label.pick-item(for="step4-4")
+                                input#step4-4.pick-item__input(type='checkbox', name='question4', value='Я собираюсь использовать  авто только для личных дел')
+                                span.pick-item__label Я собираюсь использовать  авто только для личных дел
+                            label.pick-item(for="step4-5")
+                                input#step4-5.pick-item__input(type='checkbox', name='question4', value='На автомобиле будет  ездить новичок')
+                                span.pick-item__label На автомобиле будет  ездить новичок
+                            label.pick-item(for="step4-6")
+                                input#step4-6.pick-item__input(type='checkbox', name='question4', value='Я собираюсь эксплуатировать  автомобиль больше 3 лет')
+                                span.pick-item__label Я собираюсь эксплуатировать  автомобиль больше 3 лет
+                            label.pick-item(for="step4-7")
+                                input#step4-7.pick-item__input(type='checkbox', name='question4', value='В перспективе я хочу продать  авто и купить что-то лучше')
+                                span.pick-item__label В перспективе я хочу продать  авто и купить что-то лучше 
+                        .step-slide__bottom
+                            .kviz-progress
+                                .kviz-progress__title 4 вопрос из 5
+                                .kviz-progress__steps
+                                    .kviz-progress__item.active
+                                    .kviz-progress__item.active
+                                    .kviz-progress__item.active
+                                    .kviz-progress__item.active
+                                    .kviz-progress__item
+                            .prev-next-container
+                                .kviz__error
+                                a.btn.btn-next.qa-next(href='#') Далее
+                .step-slide
+                    .step__body
+                        .step-slide__title Где вам удобно приобрести авто?
+                        .kviz__ans.question__ans--radio
+                            label.pick-item.qa-last(for="step5-1")
+                                input#step5-1.pick-item__input(type='radio', name='question5', value=' В моем городе и области')
+                                span.pick-item__label  В моем городе и области
+                            label.pick-item.qa-last(for="step5-2")
+                                input#step5-2.pick-item__input(type='radio', name='question5', value='В моем городе, области  и в соседних областях')
+                                span.pick-item__label В моем городе, области  и в соседних областях
+                            label.pick-item.qa-last(for="step5-3")
+                                input#step5-3.pick-item__input(type='radio', name='question5', value='В любом городе Украины ')
+                                span.pick-item__label В любом городе Украины
+                            label.pick-item.qa-last(for="step5-4")
+                                input#step5-4.pick-item__input(type='radio', name='question5', value='В любой стране')
+                                span.pick-item__label В любой стране
+                        .step-slide__bottom
+                            .kviz-progress
+                                .kviz-progress__title 5 вопрос из 5
+                                .kviz-progress__steps
+                                    .kviz-progress__item.active
+                                    .kviz-progress__item.active
+                                    .kviz-progress__item.active
+                                    .kviz-progress__item.active
+                                    .kviz-progress__item.active
+                            .prev-next-container
+                                .kviz__error
+                                a.btn.btn-next.qa-next.qa-last(href='#') Далее
+                    .step__sidebar
+                        img(src="img/qa5.jpg", alt="авто")
+                .step-slide.step-slide--finish
+                    .step__body
+                        .step-slide__title Благодарим за ответы!
+                        p Чтобы получить подборку из наиболее подходящих <span class="desctop-br"><br></span>вам автомобилей, готовых к покупке, заполните форму
+                        .form.step-slide__form
+                            .form-line
+                                label
+                                    span Имя
+                                    input(type="text" placeholder="Как вас зовут" name="name2" required).rfield
+                                label
+                                    span телефон
+                                    input(type="text" placeholder="+38 (093) 333 33 33" name="phone" required).rfield.phone-mask
+                            .form-line
+                                label
+                                    span ваш город
+                                    input(type="text" placeholder="Киев" name="city" required).rfield
+                                label
+                                    span e-mail
+                                    input(type="email" placeholder="example@gmail.com" name="email" required).rfield
+                            //- input.btn.btn--orange(type='submit', value='Получить предложение')
+                            .agree-line
+                                input#modal__agree(type='checkbox', checked='', disabled='')
+                                label(for='#modal__agree') Я согласен на обработку персональных данных 
+                            
+                            input.utm_source.hidden(type='hidden', name='utm_source')
+                            input.utm_medium.hidden(type='hidden', name='utm_medium')
+                            input.utm_campaign.hidden(type='hidden', name='utm_campaign')
+                            input.utm_term.hidden(type='hidden', name='utm_term')
+                            input.utm_content.hidden(type='hidden', name='utm_content')
+                            button.btn.btn-finish(type="submit")
+                                a(href="#modalKviz").modal-open.kviz__btn Отправить

@@ -1,0 +1,75 @@
+.price {
+    &__body {
+        display: flex;
+    }
+    &__block {
+        width: 30%;
+        p {
+            margin: 0;
+            font-weight: 200;
+        }
+    }
+    &__pic {
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 541px;
+            height: 596px;
+            background: url('../img/price-bg.jpg') no-repeat;
+            background-size: contain;
+        }
+    }
+    &__services {
+        width: 70%;
+        padding: 0 0 0 40px;
+    }
+    &__header {
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 200;
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        font-weight: 700;
+        padding: 5px 0;
+        border-bottom: 1px solid #aeaeae;
+    }
+    &__sum {
+        font-size: 30px;
+        line-height: 1;
+        text-align: right;
+        span {
+            display: block;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 400;
+        }
+    }
+    &__items {
+        display: flex;
+    }
+    &__group {
+        width: 50%;
+    }
+    &__item {
+        position: relative;
+        padding-left: 20px;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: #181630;
+            opacity: 0.34;
+
+        }
+    }
+}

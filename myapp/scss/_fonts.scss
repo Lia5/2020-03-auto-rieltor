@@ -1,0 +1,14 @@
+@import "_mixins/font-face";
+
+
+@include font-face("Inter", "../fonts/Inter-Thin/Inter-Thin", 50);
+// @include font-face("Inter", "../assets/fonts/Inter-ExtraLight/Inter-ExtraLight", 100);
+@include font-face("Inter", "../fonts/Inter-Light/Inter-Light", 200);
+@include font-face("Inter", "../fonts/Inter-Regular/Inter-Regular", 400);
+// @include font-face("Inter", "../assets/fonts/Inter-Medium/Inter-Medium", 500);
+// @include font-face("Inter", "../assets/fonts/Inter-SemiBold/Inter-SemiBold", 600);
+@include font-face("Inter", "../fonts/Inter-Bold/Inter-Bold", 700);
+@include font-face("Inter", "../fonts/Inter-ExtraBold/Inter-ExtraBold", 800); //ExtraBold 
+// @include font-face("Inter", "../assets/fonts/Inter-Black/Inter-Black", 900);
+
+@include font-face("RussoOne", "../fonts/RussoOne/RussoOne", 400);

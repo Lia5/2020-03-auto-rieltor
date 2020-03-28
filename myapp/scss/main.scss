@@ -1,0 +1,178 @@
+
+@import "tools/_normalize.scss";
+@import "vars";
+@import "fonts";
+@import "libs";
+
+::placeholder {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	font-size: 14px;
+	min-width: 320px;
+	position: relative;
+	line-height: 24px;
+	font-family: "Inter", Arial, Helvetica, sans-serif;
+	overflow-x: hidden;
+	color: #292321;
+	input, textarea {
+		width: 100%;
+		border: none;
+		outline: none;
+		background: transparent;
+		&:focus:required:invalid {
+			border-color: red;
+		}
+		&:required:valid {
+			border-color: green;
+		}
+	}
+	label {
+		img {
+			width: 22px;
+			margin-right: 10px;
+		}
+
+	}
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	&.img-width {
+		width: 100%;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+b, strong {
+	font-weight: bold;
+}
+.wrap {
+	max-width: 1234px;
+	padding: 0 34px;
+	margin: 0 auto;
+	@media screen and (max-width: 579px) {
+		padding: 0 15px;
+	}
+}
+a {
+	text-decoration: none;
+	color: $text;
+	transition: all.6s ease;
+	outline:none !important;
+	border: none;
+	&:hover {
+		outline:none;
+	};
+	&:active {
+		outline:none;
+		transition: all.1s ease;
+	};
+}
+ul,li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.title {
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 700;
+	@media screen and (max-width: 579px) {
+		font-size: 25px;
+		line-height: 1.2;
+	}
+	@media screen and (max-width: 419px) {
+		font-size: 20px;
+	}
+	&--center {
+		text-align: center;
+
+	}
+	&--white {
+		color: #fff;
+	}
+}
+.subtitle {
+	text-align: center;
+}
+.btn {
+	position: relative;
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 30px;
+	color: #fff;
+	padding: 18px 45px;
+	transition: 0.5s;
+	cursor: pointer;
+	background: $accent;
+	background: linear-gradient(#5f5fbc, #6c6cd0);
+	border: none;
+	min-width: 252px;
+    text-align: center;
+	@media screen and (max-width: 579px) {
+		padding: 15px 25px;
+	}
+	&:hover {
+		background: #4545a2;
+		background: linear-gradient(#4545a2, #5f5fb8);
+	}
+	&:active {
+		background-color: #3a3a3a;
+		color: #fff;
+	}
+	.kviz__btn {
+		color: #fff;
+	}
+	&--white {
+		color: #262626;
+		background: #fff;
+		&:hover {
+			background: #e8e8e8;
+		}
+		&:active {
+			background: #e8e8e8;
+		}
+		.kviz__btn {
+			color: #262626;
+		}
+	}
+}
+.tabs__content {
+	display: none; /* по умолчанию прячем все блоки */
+  }
+  .tabs__content.active {
+	display: block; /* по умолчанию показываем нужный блок */
+  }
+
+@import "sections/1home";
+@import "sections/2pre";
+@import "sections/3kviz";
+@import "sections/4by";
+@import "sections/5do";
+@import "sections/6what";
+@import "sections/7prod";
+@import "sections/8how";
+@import "sections/9why";
+@import "sections/10price";
+@import "sections/11services";
+@import "sections/12contact";
+
+@import "sections/modal";
+@import "sections/footer";
+

@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <meta name="keywords" content="Теги сайта">
+    <meta name="description" content="Описание сайта">
+    <meta name="author" lang="ru" content="Helen Portna">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Document </title>
+  </head>
+  <body>
+    <header class="home">
+      <div class="wrap">
+        <div class="logo-text">Авто-Риелтор</div>
+        <div class="home__body">
+          <div class="home__pre">Совсем не разбираетесь в автомобилях и боитесь купить “кота в мешке”?</div>
+          <div class="home__title">Помогаем выбрать б/у авто в Украине или доставить из США, Европы или Канады</div>
+          <div class="home__text">Используем свой опыт и ресурсы, чтобы сохранить ваши деньги и нервы приобретая автомобиль.</div>
+          <div class="home__btn"><a href="#consult" class="btn scroll-to">Получить консультацию</a></div>
+        </div>
+      </div>
+    </header>
+    <section class="pre">
+      <div class="wrap">
+        <div class="pre__items">
+          <div class="pre__item">Возвращаем деньги  в течение 30 дней,  если случаются поломки</div>
+          <div class="pre__item">Консультируем  по эксплуатации  пожизненно</div>
+          <div class="pre__item">Учитываем факторы,  о которых многие даже  не задумываются</div>
+        </div>
+      </div>
+    </section>
+    <section id="kviz" class="kviz">
+      <div class="wrap">
+        <div class="kviz__title">Ответьте на 5 вопросов и получите подборку из трех доступных к покупке автомобилей</div>
+        <div class="kviz-qa">
+          <form class="quizForm">
+            <div class="step-slide step-slide--active">
+              <div class="step__body">
+                <div class="step-slide__title">Какой у вас бюджет на покупку авто?</div>
+                <div class="kviz__ans question__ans--radio">
+                  <label for="step1-1" class="pick-item">
+                    <input id="step1-1" type="radio" name="question1" value="До $12 000" class="pick-item__input"><span class="pick-item__label">До $12 000</span>
+                  </label>
+                  <label for="step1-2" class="pick-item">
+                    <input id="step1-2" type="radio" name="question1" value="От $12 000 до $25 000" class="pick-item__input"><span class="pick-item__label">От $12 000 до $25 000</span>
+                  </label>
+                  <label for="step1-3" class="pick-item">
+                    <input id="step1-3" type="radio" name="question1" value="От $25 000 до $ 50 000" class="pick-item__input"><span class="pick-item__label">От $25 000 до $ 50 000 </span>
+                  </label>
+                  <label for="step1-4" class="pick-item">
+                    <input id="step1-4" type="radio" name="question1" value="От $50 000 и более" class="pick-item__input"><span class="pick-item__label">От $50 000 и более</span>
+                  </label>
+                </div>
+                <div class="step-slide__bottom">
+                  <div class="kviz-progress">
+                    <div class="kviz-progress__title">1 вопрос из 5</div>
+                    <div class="kviz-progress__steps">
+                      <div class="kviz-progress__item active"></div>
+                      <div class="kviz-progress__item"></div>
+                      <div class="kviz-progress__item"></div>
+                      <div class="kviz-progress__item"></div>
+                      <div class="kviz-progress__item"></div>
+                    </div>
+                  </div>
+                  <div class="prev-next-container">
+                    <div class="kviz__error"></div><a href="#" class="btn btn-next qa-next">Далее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="step__sidebar"><img src="img/qa1.jpg" alt="авто"></div>
+            </div>
+            <div class="step-slide">
+              <div class="step__body">
+                <div class="step-slide__title">Как вы будете использовать  автомобиль чаще всего?</div>
+                <div class="kviz__ans question__ans--text">
+                  <label for="step2-1" class="pick-item">
+                    <input id="step2-1" type="radio" name="question2" value="Для частого  передвижения по городу" class="pick-item__input"><span class="pick-item__label">Для частого передвижения по городу</span>
+                  </label>
+                  <label for="step2-2" class="pick-item">
+                    <input id="step2-2" type="radio" name="question2" value="Для поездок в пригород  и сельскую местность" class="pick-item__input"><span class="pick-item__label">Для поездок в пригород  и сельскую местность</span>
+                  </label>
+                  <label for="step2-3" class="pick-item">
+                    <input id="step2-3" type="radio" name="question2" value="Для дальних поездок" class="pick-item__input"><span class="pick-item__label">Для дальних поездок</span>
+                  </label>
+                </div>
+                <div class="step-slide__bottom">
+                  <div class="kviz-progress">
+                    <div class="kviz-progress__title">2 вопрос из 5</div>
+                    <div class="kviz-progress__steps">
+                      <div class="kviz-progress__item active"></div>
+                      <div class="kviz-progress__item active"></div>
+                      <div class="kviz-progress__item"></div>
+                      <div class="kviz-progress__item"></div>
+                      <div class="kviz-progress__item"></div>
+                    </div>
+                  </div>
+                  <div class="prev-next-container">
+                    <div class="kviz__error"></div><a href="#" class="btn btn-next qa-next">Далее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="step__sidebar"><img src="img/qa2.jpg" alt="авто"></div>
+            </div>
+            <div class="step-slide">
+              <div class="step__body">
+                <div class="step-slide__title">Какой ежемесячный бюджет вы можете выделять на обслуживание авто?</div>
+                <div class="kviz__ans question__ans--text">
+                  <label for="step3-1" class="pick-item">
+                    <input id="step3-1" type="radio" name="question3" value="До $50" class="pick-item__input"><span class="pick-item__label"> До $50</span>
+                  </label>
+                  <label for="step3-2" class="pick-item">
+                    <input id="step3-2" type="radio" name="question3" value="До $100" class="pick-item__input"><span class="pick-item__label">До $100</span>
+                  </label>
+                  <label for="step3-3" class="pick-item">
+                    <input id="step3-3" type="radio" name="question3" value="До $150" class="pick-item__input"><span class="pick-item__label">До $150</span>
+                  </label>
+                </div>
+                <div class="step-slide__bottom">
+                  <div class="kviz-progress">
+                    <div class="kviz-progress__title">3 вопрос из 5</div>
+                    <div class="kviz-progress__steps">
+                      <div class="kviz-progress__item active"></div>
+                      <div class="kviz-progress__item active"></div>
+                      <div class="kviz-progress__item active"></div>
+                      <div class="kviz-progress__item"></div>
+                      <div class="kviz-progress__item"></div>
+                    </div>
+                  </div>
+                  <div class="prev-next-container">
+                    <div class="kviz__error"></div><a href="#" class="btn btn-next qa-next">Далее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="step__sidebar"><img src="img/qa3.jpg" alt="авто"></div>
+            </div>
+            <div class="step-slide">
+              <div class="step__body">
+                <div class="step-slide__title">Выберите один или несколько пунктов, которые соответствуют вашей ситуации</div>
+                <div class="kviz__ans question__ans--text">
+                  <label for="step4-1" class="pick-item">
+                    <input id="step4-1" type="checkbox" name="question4" value="Я буду возить в авто ребенка  или нескольких детей " class="pick-item__input"><span class="pick-item__label">Я буду возить в авто ребенка  или нескольких детей </span>
+                  </label>
+                  <label for="step4-2" class="pick-item">
+                    <input id="step4-2" type="checkbox" name="question4" value="Я буду возить в авто собаку  или другое крупное животное" class="pick-item__input"><span class="pick-item__label">Я буду возить в авто собаку  или другое крупное животное</span>
+                  </label>
+                  <label for="step4-3" class="pick-item">
+                    <input id="step4-3" type="checkbox" name="question4" value="Я хочу путешествовать  на автомобиле " class="pick-item__input"><span class="pick-item__label">Я хочу путешествовать  на автомобиле </span>
+                  </label>
+                  <label for="step4-4" class="pick-item">
+                    <input id="step4-4" type="checkbox" name="question4" value="Я собираюсь использовать  авто только для личных дел" class="pick-item__input"><span class="pick-item__label">Я собираюсь использовать  авто только для личных дел</span>
+                  </label>
+                  <label for="step4-5" class="pick-item">
+                    <input id="step4-5" type="checkbox" name="question4" value="На автомобиле будет  ездить новичок" class="pick-item__input"><span class="pick-item__label">На автомобиле будет  ездить новичок</span>
+                  </label>
+                  <label for="step4-6" class="pick-item">
+                    <input id="step4-6" type="checkbox" name="question4" value="Я собираюсь эксплуатировать  автомобиль больше 3 лет" class="pick-item__input"><span class="pick-item__label">Я собираюсь эксплуатировать  автомобиль больше 3 лет</span>
+                  </label>
+                  <label for="step4-7" class="pick-item">
+                    <input id="step4-7" type="checkbox" name="question4" value="В перспективе я хочу продать  авто и купить что-то лучше" class="pick-item__input"><span class="pick-item__label">В перспективе я хочу продать  авто и купить что-то лучше </span>
+                  </label>
+                </div>
+                <div class="step-slide__bottom">
+                  <div class="kviz-progress">
+                    <div class="kviz-progress__title">4 вопрос из 5</div>
+                    <div class="kviz-progress__steps">
+                      <div class="kviz-progress__item active"></div>
+                      <div class="kviz-progress__item active"></div>
+                      <div class="kviz-progress__item active"></div>
+                      <div class="kviz-progress__item active"></div>
+                      <div class="kviz-progress__item"></div>
+                    </div>
+                  </div>
+                  <div class="prev-next-container">
+                    <div class="kviz__error"></div><a href="#" class="btn btn-next qa-next">Далее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step-slide">
+              <div class="step__body">
+                <div class="step-slide__title">Где вам удобно приобрести авто?</div>
+                <div class="kviz__ans question__ans--radio">
+                  <label for="step5-1" class="pick-item qa-last">
+                    <input id="step5-1" type="radio" name="question5" value=" В моем городе и области" class="pick-item__input"><span class="pick-item__label"> В моем городе и области</span>
+                  </label>
+                  <label for="step5-2" class="pick-item qa-last">
+                    <input id="step5-2" type="radio" name="question5" value="В моем городе, области  и в соседних областях" class="pick-item__input"><span class="pick-item__label">В моем городе, области  и в соседних областях</span>
+                  </label>
+                  <label for="step5-3" class="pick-item qa-last">
+                    <input id="step5-3" type="radio" name="question5" value="В любом городе Украины " class="pick-item__input"><span class="pick-item__label">В любом городе Украины</span>
+                  </label>
+                  <label for="step5-4" class="pick-item qa-last">
+                    <input id="step5-4" type="radio" name="question5" value="В любой стране" class="pick-item__input"><span class="pick-item__label">В любой стране</span>
+                  </label>
+                </div>
+                <div class="step-slide__bottom">
+                  <div class="kviz-progress">
+                    <div class="kviz-progress__title">5 вопрос из 5</div>
+                    <div class="kviz-progress__steps">
+                      <div class="kviz-progress__item active"></div>
+                      <div class="kviz-progress__item active"></div>
+                      <div class="kviz-progress__item active"></div>
+                      <div class="kviz-progress__item active"></div>
+                      <div class="kviz-progress__item active"></div>
+                    </div>
+                  </div>
+                  <div class="prev-next-container">
+                    <div class="kviz__error"></div><a href="#" class="btn btn-next qa-next qa-last">Далее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="step__sidebar"><img src="img/qa5.jpg" alt="авто"></div>
+            </div>
+            <div class="step-slide step-slide--finish">
+              <div class="step__body">
+                <div class="step-slide__title">Благодарим за ответы!</div>
+                <p>Чтобы получить подборку из наиболее подходящих <span class="desctop-br"><br></span>вам автомобилей, готовых к покупке, заполните форму</p>
+                <div class="form step-slide__form">
+                  <div class="form-line">
+                    <label><span>Имя</span>
+                      <input type="text" placeholder="Как вас зовут" name="name2" required class="rfield">
+                    </label>
+                    <label><span>телефон</span>
+                      <input type="text" placeholder="+38 (093) 333 33 33" name="phone" required class="rfield phone-mask">
+                    </label>
+                  </div>
+                  <div class="form-line">
+                    <label><span>ваш город</span>
+                      <input type="text" placeholder="Киев" name="city" required class="rfield">
+                    </label>
+                    <label><span>e-mail</span>
+                      <input type="email" placeholder="example@gmail.com" name="email" required class="rfield">
+                    </label>
+                  </div>
+                  <div class="agree-line">
+                    <input id="modal__agree" type="checkbox" checked="" disabled="">
+                    <label for="#modal__agree">Я согласен на обработку персональных данных </label>
+                  </div>
+                  <input type="hidden" name="utm_source" class="utm_source hidden">
+                  <input type="hidden" name="utm_medium" class="utm_medium hidden">
+                  <input type="hidden" name="utm_campaign" class="utm_campaign hidden">
+                  <input type="hidden" name="utm_term" class="utm_term hidden">
+                  <input type="hidden" name="utm_content" class="utm_content hidden">
+                  <button type="submit" class="btn btn-finish"><a href="#modalKviz" class="modal-open kviz__btn">Отправить</a></button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="by">
+      <div class="wrap">
+        <div class="title">Хотите приобрести  б/у автомобиль, но боитесь?</div>
+        <div class="by__body">
+          <div class="by__list">Вложить в ремонт больше, чем рассчитываете</div>
+          <div class="by__list">Нарваться на мошенников или перекупов</div>
+          <div class="by__list">Не увидеть скрытые дефекты, скрученный пробег и т.д.</div>
+          <div class="by__list">Допустить ошибки  при покупке и оформлении</div>
+          <div class="by__list">Упустить важные детали  при выборе автомобиля</div>
+          <div class="by__list">Выбрать не тот автомобиль, который решит ваши задачи</div>
+        </div>
+        <div class="title">Эти страхи оправданы, потому что  вы рискуете самым ценным:</div>
+        <div class="by__items">
+          <div class="by__item">
+            <div class="by__title">Своим временем</div>
+            <div class="by__text">Потому что придется потратить не один месяц, чтобы выявить все скрытые поломки, дождаться деталей и отремонтировать автомобиль, а то и застрять в судебных тяжбах с “серыми” документами </div>
+          </div>
+          <div class="by__item">
+            <div class="by__title">Деньгами</div>
+            <div class="by__text">Вы рассчитываете на одну сумму. Но на деле может выяснится, что для ремонта, замены деталей и устранения неисправностей требуется как минимум еще половина от первоначальной стоимости авто</div>
+          </div>
+          <div class="by__item">
+            <div class="by__title">Нервами</div>
+            <div class="by__text">Которые неизбежно пострадают в попытках привести автомобиль в порядок, или вернуть его горе-владельцу</div>
+          </div>
+          <div class="by__item">
+            <div class="by__title">Жизнью своей и пассажиров</div>
+            <div class="by__text">Неисправный, побывавший в ДТП и имеющий другие ключевые и опасные недостатки автомобиль — это ежесекундный риск для каждого, кто в нем находится. </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="do">
+      <div class="wrap">
+        <div class="title title--center title--white">При этом вы хотите приобрести автомобиль, чтобы</div>
+        <div class="do__items">
+          <div class="do__item">Ездить на авто, которое полностью решает поставленные вами задачи</div>
+          <div class="do__item">Совершить взвешенную покупку и получить лучший вариант в рамках бюджета</div>
+          <div class="do__item">Быть уверенным в надежности и безопасности своего автомобиля</div>
+          <div class="do__item">Получить удовольствие от процесса выбора и избежать стресса и сомнений</div>
+        </div>
+      </div>
+    </section>
+    <section class="what">
+      <div class="wrap">
+        <div class="what__body">
+          <div class="what__block">
+            <div class="title title--white">Что делать?</div>
+            <div class="what__title">Выбирайте, приобретайте и эксплуатируйте автомобиль с полной поддержкой от компании Авто-Риелтор</div>
+          </div>
+          <div class="what__items">
+            <div class="what__item">
+              <div class="what__num">01</div>
+              <div class="what__icon"><img src="img/icons/global.svg" alt="icons"></div>
+              <div class="what__text">Помогаем выбрать, проверить и при необходимости доставить автомобиль из другой страны</div>
+            </div>
+            <div class="what__item">
+              <div class="what__num">02</div>
+              <div class="what__icon"><img src="img/icons/stamp.svg" alt="icons"></div>
+              <div class="what__text">Делаем полную юридическую проверку документов и истории автомобиля</div>
+            </div>
+            <div class="what__item">
+              <div class="what__num">03</div>
+              <div class="what__icon"><img src="img/icons/handshake.svg" alt="icons"></div>
+              <div class="what__text">Сопровождаем при торге, на сделке и при оформлении авто</div>
+            </div>
+            <div class="what__item">
+              <div class="what__num">04</div>
+              <div class="what__icon"><img src="img/icons/technical-support.svg" alt="icons"></div>
+              <div class="what__text">Проводим технический аудит автомобилей и осмотр авто из Украины</div>
+            </div>
+            <div class="what__item">
+              <div class="what__num">05</div>
+              <div class="what__icon"><img src="img/icons/tools.svg" alt="icons"></div>
+              <div class="what__text">Сопровождаем в процессе ремонта, первичного обслуживания и подбора запчастей и расходников</div>
+            </div>
+            <div class="what__item">
+              <div class="what__num">06</div>
+              <div class="what__icon"><img src="img/icons/questions.svg" alt="icons"></div>
+              <div class="what__text">Даем консультации по обслуживанию и эксплуатации на весь срок, пока вы пользуетесь своим автомобилем</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="prod">
+      <div class="wrap">
+        <div class="title title--center">Убедитесь сами</div>
+        <div class="subtitle">Покупая авто с экспертом вы можете подобрать достойный вариант </div>
+        <div class="prod__body tabs">
+          <ul class="tabs__caption">
+            <li class="active">от $8000</li>
+            <li>от $16000</li>
+            <li>от $21000</li>
+          </ul>
+          <div class="tabs__content active"> 
+            <div class="prod__items">
+              <div class="prod__item">
+                <div class="prod__name">KIA Rio</div>
+                <div class="prod__price">от $8000</div>
+                <div class="prod__img"><img src="img/prod/kiario.jpg" alt="kiario"></div>
+                <div class="prod__har">
+                  <div class="prod__har-item">
+                    <div class="prod__title">Объем  двигателя</div>
+                    <div class="prod__text">1.4</div>
+                  </div>
+                  <div class="prod__har-item">
+                    <div class="prod__title">Коробка  передач</div>
+                    <div class="prod__text">Автомат</div>
+                  </div>
+                  <div class="prod__har-item">
+                    <div class="prod__title">Вид  топлива</div>
+                    <div class="prod__text">Бензин</div>
+                  </div>
+                </div>
+              </div>
+              <div class="prod__item">
+                <div class="prod__name">Hyundai i30</div>
+                <div class="prod__price">от $12000</div>
+                <div class="prod__img"><img src="img/prod/hyundai.jpg" alt="hyundai"></div>
+                <div class="prod__har">
+                  <div class="prod__har-item">
+                    <div class="prod__title">Объем  двигателя</div>
+                    <div class="prod__text">1.6</div>
+                  </div>
+                  <div class="prod__har-item">
+                    <div class="prod__title">Коробка  передач</div>
+                    <div class="prod__text">Автомат</div>
+                  </div>
+                  <div class="prod__har-item">
+                    <div class="prod__title">Вид  топлива</div>
+                    <div class="prod__text">Бензин</div>
+                  </div>
+                </div>
+              </div>
+              <div class="prod__item">
+                <div class="prod__name">Mazda 3</div>
+                <div class="prod__price">от $14000</div>
+                <div class="prod__img"><img src="img/prod/mazda3.jpg" alt="mazda3"></div>
+                <div class="prod__har">
+                  <div class="prod__har-item">
+                    <div class="prod__title">Объем  двигателя</div>
+                    <div class="prod__text">1.5</div>
+                  </div>
+                  <div class="prod__har-item">
+                    <div class="prod__title">Коробка  передач</div>
+                    <div class="prod__text">Автомат</div>
+                  </div>
+                  <div class="prod__har-item">
+                    <div class="prod__title">Вид  топлива</div>
+                    <div class="prod__text">Бензин</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__content">
+            <div class="prod__items">
+              <div class="prod__item">
+                <div class="prod__name">Volkswagen Golf 7</div>
+                <div class="prod__price">от $16000</div>
+                <div class="prod__img"><img src="img/prod/volkswagengolf7.jpg" alt="volkswagengolf7"></div>
+                <div class="prod__har">
+                  <div class="prod__har-item">
+                    <div class="prod__title">Объем  двигателя</div>
+                    <div class="prod__text">2.0</div>
+                  </div>
+                  <div class="prod__har-item">
+                    <div class="prod__title">Коробка  передач</div>
+                    <div class="prod__text">Автомат</div>
+                  </div>
+                  <div class="prod__har-item">
+                    <div class="prod__title">Вид  топлива</div>
+                    <div class="prod__text">Дизель</div>
+                  </div>
+                </div>
+              </div>
+              <div class="prod__item">
+                <div class="prod__name">KIA Sportage</div>
+                <div class="prod__price">от $16500</div>
+                <div class="prod__img"><img src="img/prod/kiasportage.jpg" alt="kiasportage"></div>
+                <div class="prod__har">
+                  <div class="prod__har-item">
+                    <div class="prod__title">Объем  двигателя</div>
+                    <div class="prod__text">2.0</div>
+                  </div>
+                  <div class="prod__har-item">
+                    <div class="prod__title">Коробка  передач</div>
+                    <div class="prod__text">Автомат</div>
+                  </div>
+                  <div class="prod__har-item">
+                    <div class="prod__title">Вид  топлива</div>
+                    <div class="prod__text">Дизель</div>
+                  </div>
+                </div>
+              </div>
+              <div class="prod__item">
+                <div class="prod__name">Mazda 6</div>
+                <div class="prod__price">от $17000</div>
+                <div class="prod__img"><img src="img/prod/mazda6.jpg" alt="mazda6"></div>
+                <div class="prod__har">
+                  <div class="prod__har-item">
+                    <div class="prod__title">Объем  двигателя</div>
+                    <div class="prod__text">2.5</div>
+                  </div>
+                  <div class="prod__har-item">
+                    <div class="prod__title">Коробка  передач</div>
+                    <div class="prod__text">Автомат</div>
+                  </div>
+                  <div class="prod__har-item">
+                    <div class="prod__title">Вид  топлива</div>
+                    <div class="prod__text">Бензин</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__content">Соде3
+            <div class="prod__items">
+              <div class="prod__item">
+                <div class="prod__name">Nissan X-trail</div>
+                <div class="prod__price">от $21000</div>
+                <div class="prod__img"><img src="img/prod/nissanxtrail.jpg" alt="nissanxtrail"></div>
+                <div class="prod__har">
+                  <div class="prod__har-item">
+                    <div class="prod__title">Объем  двигателя</div>
+                    <div class="prod__text">2.5</div>
+                  </div>
+                  <div class="prod__har-item">
+                    <div class="prod__title">Коробка  передач</div>
+                    <div class="prod__text">Автомат</div>
+                  </div>
+                  <div class="prod__har-item">
+                    <div class="prod__title">Вид  топлива</div>
+                    <div class="prod__text">Бензин</div>
+                  </div>
+                </div>
+              </div>
+              <div class="prod__item">
+                <div class="prod__name">BMW 530D</div>
+                <div class="prod__price">от $30000</div>
+                <div class="prod__img"><img src="img/prod/bmw530d.jpg" alt="bmw530d"></div>
+                <div class="prod__har">
+                  <div class="prod__har-item">
+                    <div class="prod__title">Объем  двигателя</div>
+                    <div class="prod__text">3.0</div>
+                  </div>
+                  <div class="prod__har-item">
+                    <div class="prod__title">Коробка  передач</div>
+                    <div class="prod__text">Автомат</div>
+                  </div>
+                  <div class="prod__har-item">
+                    <div class="prod__title">Вид  топлива</div>
+                    <div class="prod__text">Дизель </div>
+                  </div>
+                </div>
+              </div>
+              <div class="prod__item">
+                <div class="prod__name">Volkswagen Touareg</div>
+                <div class="prod__price">от $33000</div>
+                <div class="prod__img"><img src="img/prod/volkswagentouareg.jpg" alt="volkswagentouareg"></div>
+                <div class="prod__har">
+                  <div class="prod__har-item">
+                    <div class="prod__title">Объем  двигателя</div>
+                    <div class="prod__text">3.0</div>
+                  </div>
+                  <div class="prod__har-item">
+                    <div class="prod__title">Коробка  передач</div>
+                    <div class="prod__text">Автомат</div>
+                  </div>
+                  <div class="prod__har-item">
+                    <div class="prod__title">Вид  топлива</div>
+                    <div class="prod__text">Дизель </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="how">
+      <div class="wrap">
+        <div class="title title--center">Как мы это делаем</div>
+        <div class="how__items">
+          <div class="how__item">
+            <div class="how__num">01</div>
+            <div class="how__text">Получаем вашу заявку</div>
+          </div>
+          <div class="how__item">
+            <div class="how__num">02</div>
+            <div class="how__text">Договариваемся с вами о встрече </div>
+          </div>
+          <div class="how__item">
+            <div class="how__num">03</div>
+            <div class="how__text">Определяем наши цели, бюджет и страну, где будем искать автомобиль</div>
+          </div>
+          <div class="how__item">
+            <div class="how__num">04</div>
+            <div class="how__text">Подписываем  с вами договор</div>
+          </div>
+        </div>
+        <div class="how__body">
+          <div class="how__block">
+            <div class="how__pic"><img src="img/how-toyota-ua.png" alt="toyota"></div>
+            <div class="how__title">Если выбираем авто в Украине</div>
+            <ul class="how__lists">
+              <li><span>05</span>
+                <div class="how__list">Подбираем варианты автомобилей согласно требованиям и бюджету</div>
+              </li>
+              <li><span>06</span>
+                <div class="how__list">Согласовываем с вами и выбираем один</div>
+              </li>
+              <li><span>07</span>
+                <div class="how__list">Проверяем юридическую чистоту</div>
+              </li>
+              <li><span>08</span>
+                <div class="how__list">Совершаем выездную проверку</div>
+              </li>
+              <li><span>09</span>
+                <div class="how__list">Делаем фотоотчет и заключение после осмотра</div>
+              </li>
+              <li><span>10</span>
+                <div class="how__list">Проверяем техническое состояние на СТО</div>
+              </li>
+              <li><span>11</span>
+                <div class="how__list">Проводим торг с продавцом и выигрываем для вас лучшую цену</div>
+              </li>
+              <li><span>12</span>
+                <div class="how__list">Сопровождаем при регистрации автомобиля</div>
+              </li>
+              <li><span>13</span>
+                <div class="how__list">Дарим подарок от компании по завершению сделки</div>
+              </li>
+              <li><span>14</span>
+                <div class="how__list">Подключаем вас в чат Telegram, где вы получаете от нас полную поддержку по дальнейшей эксплуатации и обслуживанию авто </div>
+              </li>
+            </ul>
+          </div>
+          <div class="how__block">
+            <div class="how__pic"><img src="img/how-hyundai-other.png" alt="hyundai"></div>
+            <div class="how__title">Если выбираем авто в США, Европе или Канаде</div>
+            <ul class="how__lists">
+              <li><span>05</span>
+                <div class="how__list">Подбираем варианты автомобилей согласно требованиям и бюджету</div>
+              </li>
+              <li><span>06</span>
+                <div class="how__list">Согласовываем с вами и выбираем один для участия в аукционе</div>
+              </li>
+              <li><span>07</span>
+                <div class="how__list">Проверяем юридическую чистоту</div>
+              </li>
+              <li><span>08</span>
+                <div class="how__list">Делаем сводку по эксплуатации (не участвовал ли он в торгах ранее, сколько было владельцев, бывал ли в других ДТП и т.д.)</div>
+              </li>
+              <li><span>09</span>
+                <div class="how__list">Принимаем участие в торгах в рамках бюджета</div>
+              </li>
+              <li><span>10</span>
+                <div class="how__list">Оплачиваем автомобиль</div>
+              </li>
+              <li><span>11</span>
+                <div class="how__list">Оформляем отправку в Украину</div>
+              </li>
+              <li><span>12</span>
+                <div class="how__list">Принимаем авто на таможне и проверяем</div>
+              </li>
+              <li><span>13</span>
+                <div class="how__list">Сопровождаем при регистрации автомобиля</div>
+              </li>
+              <li><span>14</span>
+                <div class="how__list">Дарим подарок от компании по завершению сделки</div>
+              </li>
+              <li><span>15</span>
+                <div class="how__list">Подключаем вас в чат Telegram, где вы получаете от нас полную поддержку по дальнейшей эксплуатации и обслуживанию авто</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="why">
+      <div class="wrap">
+        <div class="why__body">
+          <div class="why__advantages">
+            <div class="title title--white">Что делать?</div>
+            <div class="why__items">
+              <div class="why__item">
+                <div class="why__title">Экономим ваше время </div>
+                <div class="why__text">Вам не нужно учиться выбирать автомобили, мы все сделаем сами. От вас потребуется только одобрять или отклонять предложенные нами варианты</div>
+              </div>
+              <div class="why__item">
+                <div class="why__title">Сохраняем ваши деньги </div>
+                <div class="why__text">Как правило, работая с нами вы экономите больше, чем стоят наши услуги. Мы сохраним больше ваших денег на подборе вариантов и торгах </div>
+              </div>
+              <div class="why__item">
+                <div class="why__title">Учитываем то, что другие даже не замечают </div>
+                <div class="why__text">При подборе автомобиля обращаем внимание на специфические факторы исходя из своего опыта и знаний</div>
+              </div>
+              <div class="why__item">
+                <div class="why__title">Бережем ваши ресурсы и нервы </div>
+                <div class="why__text">Вам не понадобится ездить на осмотры, проверки на СТО или торги — мы все делаем за вас</div>
+              </div>
+            </div>
+          </div>
+          <div class="why__garanty">
+            <div class="title title--white">Мы даем финансовую гарантию закрепленную в договоре</div>
+            <div class="why__about">Если в течение 30 дней после покупки автомобиля с ним случаются поломки, которые мы не предвидели, — <span>возвращаем 100% оплату наших услуг</span></div>
+            <div class="btn btn--white">Хочу авто</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="price">
+      <div class="wrap">
+        <div class="price__body">
+          <div class="price__block">
+            <div class="title">Готовы выбрать лучший автомобиль для себя или близкого человека?</div>
+            <p>Мы предлагаем удобные варианты сотрудничества</p>
+            <div class="price__pic"></div>
+          </div>
+          <div class="price__services">
+            <div class="price__header">Разовые услуги</div>
+            <div class="price__service">
+              <div class="price__top">
+                <div class="price__title">Выезд на осмотр автомобиля</div>
+                <div class="price__sum">800 грн</div>
+              </div>
+              <div class="price__items">
+                <div class="price__group">
+                  <div class="price__item">Проверка кузова (ЛК покрытие, оптика, стекла)</div>
+                  <div class="price__item">Осмотр салона</div>
+                  <div class="price__item">Компьютерная диагностика</div>
+                </div>
+                <div class="price__group">
+                  <div class="price__item">Техническая проверка</div>
+                  <div class="price__item">Тест драйв</div>
+                  <div class="price__item">Заключение специалиста и рекомендации по цене</div>
+                </div>
+              </div>
+            </div>
+            <div class="price__service">
+              <div class="price__top">
+                <div class="price__title">Выезд на осмотр и диагностика на СТО</div>
+                <div class="price__sum">1 300 грн</div>
+              </div>
+              <div class="price__items">
+                <div class="price__group">
+                  <div class="price__item">Услуги выезда на осмотр</div>
+                  <div class="price__item">Проверка автомобиля на подъемнике (подвеска, рулевое, тормоза, и пр.)</div>
+                </div>
+                <div class="price__group">
+                  <div class="price__item">Проверка по базам</div>
+                  <div class="price__item">Торг</div>
+                </div>
+              </div>
+            </div>
+            <div class="price__service">
+              <div class="price__top">
+                <div class="price__title">Осмотр, диагностика и регистрация</div>
+                <div class="price__sum">2 100 грн</div>
+              </div>
+              <div class="price__items">
+                <div class="price__group">
+                  <div class="price__item">Услуги выезда на осмотр</div>
+                  <div class="price__item">Диагностика на СТО</div>
+                  <div class="price__item">Сопровождение при регистрации</div>
+                </div>
+                <div class="price__group">
+                  <div class="price__item">Помощь в дальнейшем обслуживании и эксплуатации автомобиля (телефонные консультации)</div>
+                </div>
+              </div>
+            </div>
+            <div class="price__service">
+              <div class="price__top">
+                <div class="price__title">Предпродажная оценка</div>
+                <div class="price__sum">800 грн<span>+Скидка на подбор авто</span></div>
+              </div>
+              <div class="price__items">
+                <div class="price__group">
+                  <div class="price__item">Проверка кузова (ЛК покрытие, оптика, стекла)</div>
+                  <div class="price__item">Осмотр салона</div>
+                  <div class="price__item">Компьютерная диагностика</div>
+                </div>
+                <div class="price__group">
+                  <div class="price__item">Техническая проверка</div>
+                  <div class="price__item">Тест драйв</div>
+                  <div class="price__item">Заключение специалиста и рекомендации по цене</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="wrap">
+        <div class="title title--center">Комплексные услуги</div>
+        <div class="services__pre">Каждое действие согласовывается с клиентом!</div>
+        <div class="services__body">
+          <div class="services__block">
+            <div class="services__pic"><img src="img/complex-honda-ua.png" alt="honda"></div>
+            <div class="services__title">Комплексный подбор автомобиля в Украине </div>
+            <ul class="services__lists">
+              <li class="services__list">Помощь в выборе марки, модели, комплектации автомобиля</li>
+              <li class="services__list">Выбор подходящих вариантов автомобилей</li>
+              <li class="services__list">Проверка юридической чистоты</li>
+              <li class="services__list">Выездная проверка специалистом</li>
+              <li class="services__list">Фотоотчет и заключение специалиста</li>
+              <li class="services__list">Проверка на СТО</li>
+              <li class="services__list">Торг</li>
+              <li class="services__list">Сопровождение при регистрации автомобиля</li>
+            </ul>
+            <div class="services__bottom">
+              <div class="services__item">
+                <div class="services__price">$300</div>
+                <div class="services__desc">при бюджете  от $7 000 до $12 000  </div>
+              </div>
+              <div class="services__item">
+                <div class="services__price">$400</div>
+                <div class="services__desc">при бюджете  от $12 000 до $25 000  </div>
+              </div>
+              <div class="services__item">
+                <div class="services__price">$500</div>
+                <div class="services__desc">при бюджете  от $25 000 до $50 000  </div>
+              </div>
+              <div class="services__item">
+                <div class="services__price">$600</div>
+                <div class="services__desc">при бюджете  от $50 000 и более</div>
+              </div>
+            </div>
+          </div>
+          <div class="services__block">
+            <div class="services__pic"><img src="img/complex-kia-other.png" alt="kia"></div>
+            <div class="services__title">Подбор и заказ автомобиля из США, Европы или Канады</div>
+            <ul class="services__lists">
+              <li class="services__list">Помощь в выборе марки, модели, комплектации автомобиля</li>
+              <li class="services__list">Выбор подходящих вариантов автомобилей</li>
+              <li class="services__list">Проверка по CarFax</li>
+              <li class="services__list">Участие в торгах</li>
+              <li class="services__list">После выигрыша и оплаты лота, сопровождение доставки автомобиля до порта в Одессе</li>
+              <li class="services__list">Выгрузка авто из контейнера по прибытию и таможенная очистка</li>
+              <li class="services__list">Погрузка на эвакуатор и доставка к клиенту</li>
+            </ul>
+            <div class="services__bottom">
+              <div class="services__item--full">
+                <div class="services__price">$800</div>
+                <div class="services__desc">+200$<span>если необходима помощь при ремонте автомобиля (предоставление СТО, подбор и поиск запчастей и пр.)</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="consult" class="consult">
+      <div class="wrap">
+        <div class="consult__body">
+          <div class="consult__about">
+            <div class="title title--white">Выбрать автомобиль  и не ошибиться?</div>
+            <div class="consult__items">
+              <div class="consult__item">Отнеситесь серьезно к выбору марки и модели автомобиля</div>
+              <div class="consult__item">Не пренебрегайте полной юридической и технической проверкой</div>
+              <div class="consult__item">Не связывайтесь с мошенниками и “серыми” схемами покупки авто</div>
+            </div>
+            <div class="consult__subtitle">А лучше оставьте заявку и получите бесплатную первичную консультацию опытных специалистов Авто-Риелтор</div>
+            <div class="consult__subtitle"> <a href="tel:+380989997469">(098) 999 74 69</a><a href="mailto:auto-rieltor@gmail.com">auto-rieltor@gmail.com</a></div>
+          </div>
+          <div class="consult__form">
+            <form action="">
+              <input type="hidden" name="utm_source" class="utm_source hidden">
+              <input type="hidden" name="utm_medium" class="utm_medium hidden">
+              <input type="hidden" name="utm_campaign" class="utm_campaign hidden">
+              <input type="hidden" name="utm_term" class="utm_term hidden">
+              <input type="hidden" name="utm_content" class="utm_content hidden">
+              <input type="hidden" name="info" value="Приватна консультація">
+              <div class="title title--white">Заполните форму и специалист свяжется с вами в ближайшее время</div>
+              <div class="form step-slide__form">
+                <div class="form-line"> 
+                  <label><span>Имя</span>
+                    <input type="text" placeholder="Как вас зовут" name="name2" required class="rfield">
+                  </label>
+                  <label><span>телефон</span>
+                    <input type="text" placeholder="+38 (093) 333 33 33" name="phone" required class="rfield phone-mask">
+                  </label>
+                  <label><span>e-mail</span>
+                    <input type="email" placeholder="example@gmail.com" name="email" required class="rfield">
+                  </label>
+                </div>
+                <div class="agree-line">
+                  <input id="modal__agree" type="checkbox" checked="" disabled="">
+                  <label for="#modal__agree">Я даю згоду на  <span>обробку персональних даних</span></label>
+                </div>
+                <div class="form-line-wrap">
+                  <button type="submit" class="btn btn--white btn-finish"><a href="#modalFinish" class="kviz__btn">Оставить заявку</a></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="footer__item copy">
+            <p>© 2020 Auto-Rieltor. Все права защищены. </p>
+            <p>Сайт не является публичной офертой.</p>
+          </div>
+          <div class="footer__item"><a href="#policy" class="modal-open">Политика конфиденциальности</a></div>
+          <div class="footer__item dev"> 
+            <p>Разработка сайта</p><a href="https://nox.agency/" class="dev__logo"><img src="img/logo-nox-white.png" alt="logo-nox-white"></a>
+          </div>
+        </footer>
+      </div>
+    </section>
+    <script src="js/scripts.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+  <!-- END body///////???-->
+</html>
