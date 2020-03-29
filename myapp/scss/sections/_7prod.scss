@@ -1,11 +1,22 @@
 .prod {
+    padding: 130px 0 150px;
+    .title {
+        margin-bottom: 24px;
+    }
+    .wrap {
+        max-width: 1330px;
+    }
     .tabs__caption {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+        margin-bottom: 118px;
         display: flex;
         align-items: center;
         justify-content: center;
         li {
             opacity: 0.4;
-            margin: 0 20px;
+            margin: 0 38px;
             position: relative;
             cursor: pointer;
             &:hover {
@@ -24,6 +35,9 @@
                 }
             }
         }
+    }
+    &__body {
+        margin: 104px 0 0;
     }
     &__items {
         display: flex;
@@ -44,7 +58,7 @@
         color: #292321;
     }
     &__img {
-        min-height: 262px;
+        min-height: 218px;
         display: flex;
         img {
             margin: auto;
@@ -54,10 +68,12 @@
     &__har {
         display: flex;
         justify-content: space-between;
+        max-width: 289px;
     }
     &__har-item {
-        width: 30%;
-        padding: 5px 20px;
+        width: 33%;
+        padding-right: 15px;
+        padding-left: 15px;
         &+.prod__har-item {
             border-left: 1px solid #e8e8e8;
         }

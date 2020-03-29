@@ -1,11 +1,14 @@
 .pre {
-    padding: 40px 0 40px;
+    padding: 69px 0;
     background: $accent;
     color: #e0cdcd;
     &__items {
         display: flex;
+        justify-content: space-between;
+        max-width: 1124px;
     }
     &__item {
+        max-width: 300px;
         font-size: 18px;
         line-height: 30px;
         font-weight: 700;

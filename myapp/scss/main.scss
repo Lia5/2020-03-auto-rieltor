@@ -44,6 +44,11 @@ body {
 	}
 }
 
+.body-modal-open {
+	height: 100vh;
+	overflow: hidden;
+}
+
 .img-responsive {
 	display: block;
 	max-width: 100%;
@@ -124,7 +129,8 @@ ul,li {
 	background: linear-gradient(#5f5fbc, #6c6cd0);
 	border: none;
 	min-width: 252px;
-    text-align: center;
+	text-align: center;
+	border-radius: 6px;
 	@media screen and (max-width: 579px) {
 		padding: 15px 25px;
 	}

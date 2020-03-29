@@ -1,26 +1,32 @@
 .what {
-    padding: 40px 0 40px;
+    padding: 140px 0 130px;
     background: url('../img/what-bg.jpg') no-repeat;
     background-position: left bottom;
     background-size: cover;
     color: #ffffff;
+    .wrap {
+        max-width: 1290px;
+    }
     &__body {
         display: flex;
     }
     &__block {
-        width: 30%;
-        padding: 20px 0;
+        width: 31%;
+        padding: 72px 5% 10px 2%;
+    }
+    &__title {
+        margin-top: 41px;
     }
     &__items {
         display: flex;
         flex-wrap: wrap;
-        width: 70%;
+        width: 69%;
     }
     &__item {
         width: 29%;
         position: relative;
         background: #32323f;
-        padding: 20px;
+        padding: 43px 14px 43px 43px;
         margin: 2% 2%;
     }
     &__num {
@@ -31,6 +37,7 @@
     }
     &__icon {
         width: 72px;
+        margin-bottom: 14px;
         svg {
             max-width: 100%;
         }

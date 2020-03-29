@@ -1,31 +1,46 @@
 .why {
+    background: #f3f3f3;
     &__body {
         display: flex;
     }
     &__advantages {
-        width: 60%;
+        position: relative;
+        width: 63%;
         color: #fff;
         background: #32313f;
-        padding: 40px;
+        padding: 154px 40px 59px 0;
+        z-index: 1;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 120%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            background: #32313f;
+            z-index: -1;
+        }
     }
     &__items {
         display: flex;
         flex-wrap: wrap;
+        margin-top: 106px;
     }
     &__item {
-        width: 50%;
-        padding: 0 25px 20px 0;
+        width: 48%;
+        padding: 0 16% 20px 0;
+        margin-bottom: 60px;
     }
     &__title {
         position: relative;
         font-weight: 700;
-        padding: 20px 0;
+        padding: 24px 0;
         &:after {
             content: "";
             position: absolute;
             top: 0;
             left: 0;
-            width: 70px;
+            width: 44px;
             height: 3px;
             background: #6262bf;
         }
@@ -34,15 +49,41 @@
         font-weight: 200;
     }
     &__garanty {
-        width: 40%;
-        padding: 20px;
-        background: $accent url('../img/shield.jpg') no-repeat;
-        background-size: cover;
+        position: relative;
+        width: 37%;
+        padding: 310px 0px 20px 60px;
+        z-index: 1;
+        .btn {
+            min-width: 205px;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            width: 133%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: #6262bf;
+            z-index: -1;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            width: 133%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: $accent url('../img/shield.jpg') no-repeat;
+            background-size: cover;
+            z-index: -1;
+        }
     }
     &__about {
         font-size: 18px;
         line-height: 30px;
         color: #fff;
+        margin-top: 40px;
+        margin-bottom: 80px;
         span {
             font-weight: 700;
         }

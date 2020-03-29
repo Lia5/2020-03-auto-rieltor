@@ -2,15 +2,18 @@
     position: relative;
     background: #f8f8f8;
     overflow: hidden;
-    padding-top: 75px;
+    padding-top: 115px;
     padding-bottom: 128px;
+    .wrap {
+        max-width: 1410px;
+    }
     @media screen and (max-width: 565px) {
         padding-top: 54px;
         padding-bottom: 112px;
     }
     &__title {
         max-width: 681px;
-        margin: 0 auto 40px;
+        margin: 0 auto 89px;
         font-size: 30px;
         line-height: 40px;
         font-weight: 200;
@@ -26,8 +29,8 @@
     }
     &-progress {
         flex-grow: 1;
-        padding-right: 30px;
-        max-width: 339px;
+        margin-right: 30px;
+        max-width: 488px;
         margin-right: auto;
         @media screen and (max-width: 560px) {
             padding-right: 0;
@@ -40,11 +43,16 @@
         }
         &__item {
             flex-grow: 1;
-            height: 13px;
+            margin-top: 5px;
+            height: 8px;
             background: #f5f6f7;
             &.active {
                 background: $accent;
             }
+        }
+        &__title {
+            font-size: 18px;
+            line-height: 40px;
         }
 
     }
@@ -53,7 +61,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
-        margin-bottom: 120px;
+        margin-bottom: 220px;
         @media screen and (max-width: 820px) {
             flex-wrap: wrap;
         }
@@ -68,7 +76,7 @@
         position: absolute;
         top: -40px;
         color: $accent;
-        font-size: 15px;
+        font-size: 13px;
         font-weight: 700;
         @media screen and (max-width: 540px) {
             top: -90px;
@@ -103,6 +111,7 @@
         &:nth-child(4) {
             .pick-item {
                 width: 30%;
+                margin-right: 3%;
             }
           
         }
@@ -110,7 +119,7 @@
             font-size: 30px;
             line-height: 40px;
             font-weight: 800;
-            margin-bottom: 84px;
+            margin-bottom: 73px;
             @media screen and (max-width: 560px) {
                 font-size: 26px;
                 line-height: 30px;
@@ -119,13 +128,37 @@
         }
         &__bottom {
             display: flex;
+            max-width: 700px;
             @media screen and (max-width: 560px) {
                 display: block;
             }
         }
         &--finish {
-            background: url('../img/qa-finish.png') no-repeat;
+            background: url('../img/qa-finish.jpg') no-repeat;
             background-position: right bottom;
+            .step-slide__title {
+                margin-bottom: 38px;
+                color: $accent;
+            }
+            .step-slide__form {
+                width: 100%;
+            }
+            .step__body {
+                width: 69%;
+                padding: 82px 40px 110px 87px;
+            }
+            .step__body p {
+                margin-bottom: 87px;
+            }
+            .agree-line {
+                margin-top: -10px;
+            }
+            .form-line {
+                justify-content: space-between;
+            }
+            .form-line label {
+                width: 46%;
+            }
         }
         p {
             margin: 0 0 17px 0;
@@ -143,17 +176,17 @@
         }
     }
     &__body {
-        padding: 80px 40px 40px 80px;
+        padding: 82px 40px 40px 87px;
     }
 }
 .pick-item {
     min-width: 75px;
     display: block;
-    margin: 0 0 30px;
+    margin: 0 0 28px;
     cursor: pointer;
-    width: 45%;
+    width: 44%;
     background: #fff;
-    margin-right: 2%;
+    margin-right: 5%;
 
     @media screen and (max-width: 980px) {
         width: 30%;
@@ -187,7 +220,7 @@
         &[type="checkbox"]:checked + .pick-item__label:after {
             content: "";
             position: absolute;
-            left: 30px;
+            left: 33px;
             width: 12px;
             height: 6px;
             border: 2px solid #fff;
@@ -212,10 +245,10 @@
         }
     }
     &__label {
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 18px;
+        line-height: 24px;
         position: relative;
-        padding: 10px 10px 10px 50px;
+        padding: 10px 10px 10px 63px;
         font-weight: 500;
         height: 80px;
         display: flex;
@@ -223,6 +256,7 @@
         justify-content: center;
         border: 1px solid #e8e8e8;
         z-index: 1;
+        border-radius: 6px;
         @media screen and (max-width: 980px) {
             height: 60px;
         }
@@ -234,13 +268,13 @@
         &:before {
             content: "";
             display: block;
-            width: 33px;
-            height: 33px;
+            width: 23px;
+            height: 23px;
             border: 2px solid #f8f8f8;
             background: #f8f8f8;
             position: absolute;
-            top: 20px;
-            left: 20px;
+            top: 25px;
+            left: 28px;
             transition: 0.3s;
         }
         &:hover:before {
@@ -262,11 +296,13 @@
 .prev-next-container {
     position: relative;
     display: flex;
+    .btn {
+        min-width: 182px;
+    }
     @media screen and (max-width: 580px) {
         flex-wrap: wrap;
         flex-direction: column-reverse;
         .btn {
-            min-width: 182px;
             font-size: 14px;
             line-height: 27px;
         }

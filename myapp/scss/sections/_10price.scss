@@ -1,11 +1,18 @@
 .price {
+    padding: 214px 0 80px;
+    background: #f2f2f2;
     &__body {
         display: flex;
     }
     &__block {
-        width: 30%;
+        width: 35%;
+        padding-top: 5px;
+        padding-right: 23px;
         p {
-            margin: 0;
+            max-width: 240px;
+            margin: 36px 0 93px 0;
+            font-size: 18px;
+            line-height: 30px;
             font-weight: 200;
         }
     }
@@ -23,21 +30,26 @@
         }
     }
     &__services {
-        width: 70%;
-        padding: 0 0 0 40px;
+        width: 65%;
+        padding: 0 5% 0 7%;
     }
     &__header {
         font-size: 30px;
         line-height: 40px;
         font-weight: 200;
+        margin-bottom: 78px;
     }
     &__top {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
         font-weight: 700;
-        padding: 5px 0;
+        padding: 5px 0 13px;
+        margin-bottom: 22px;
         border-bottom: 1px solid #aeaeae;
+    }
+    &__title {
+        font-size: 18px;
     }
     &__sum {
         font-size: 30px;
@@ -52,6 +64,7 @@
     }
     &__items {
         display: flex;
+        margin-bottom: 39px;
     }
     &__group {
         width: 50%;
@@ -59,6 +72,7 @@
     &__item {
         position: relative;
         padding-left: 20px;
+        margin-bottom: 6px;
         &:before {
             content: "";
             position: absolute;
