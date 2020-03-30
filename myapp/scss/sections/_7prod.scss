@@ -3,12 +3,13 @@
     @media screen and (max-width: 1239px) {
         padding: 70px 0 90px;
     }
+    @media screen and (max-width: 579px) {
+        padding: 40px 0;
+    }
     .title {
         margin-bottom: 24px;
     }
-    .wrap {
-        max-width: 1330px;
-    }
+
     .tabs__caption {
         font-size: 18px;
         line-height: 24px;
@@ -20,11 +21,19 @@
         @media screen and (max-width: 1239px) {
             margin-bottom: 50px;
         }
+        @media screen and (max-width: 579px) {
+            font-size: 13px;
+            line-height: 15px;
+            margin-bottom: 30px;
+        }
         li {
             opacity: 0.4;
             margin: 0 38px;
             position: relative;
             cursor: pointer;
+            @media screen and (max-width: 579px) {
+                margin: 0 15px;
+            }
             &:hover {
                 opacity: 0.9;
             }
@@ -51,20 +60,33 @@
     &__items {
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width: 579px) {
+            flex-wrap: wrap;
+        }
     }
     &__item {
         width: 30%;
+        @media screen and (max-width: 579px) {
+            width: 100%;
+            margin-bottom: 60px;
+        }
     }
     &__name {
         font-size: 18px;
         line-height: 24px;
         color: #747272;
+        @media screen and (max-width: 579px) {
+            text-align: center;
+        }
     }
     &__price {
         font-size: 18px;
         line-height: 24px;
         font-weight: 700;
         color: #292321;
+        @media screen and (max-width: 579px) {
+            text-align: center;
+        }
     }
     &__img {
         min-height: 218px;
@@ -92,6 +114,9 @@
             display: flex;
             border-left: 1px solid #e8e8e8;
         }
+        @media screen and (max-width: 579px) {
+            width: 100%;
+        }
         &+.prod__har-item {
             border-left: 1px solid #e8e8e8;
         }
@@ -103,6 +128,9 @@
         margin-bottom: 10px;
         @media screen and (max-width: 979px) {
             margin-right: 20px;
+        }
+        @media screen and (max-width: 579px) {
+            min-width: 93px;
         }
     }
 }

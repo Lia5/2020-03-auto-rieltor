@@ -7,14 +7,17 @@
     @media screen and (max-width: 1239px) {
         padding-bottom: 70px;
     }
-    .wrap {
-        max-width: 1350px;
+    @media screen and (max-width: 579px) {
+        padding: 40px 0;
     }
     &__items {
         display: flex;
         margin: 76px 0 0;
         @media screen and (max-width: 1239px) {
             flex-wrap: wrap;
+        }
+        @media screen and (max-width: 579px) {
+            margin-top: 30px;
         }
     }
     &__item {
@@ -31,6 +34,9 @@
             flex-basis: unset;
             width: 50%;
             margin-bottom: 40px;
+        }
+        @media screen and (max-width: 579px) {
+            width: 100%;
         }
     }
 }

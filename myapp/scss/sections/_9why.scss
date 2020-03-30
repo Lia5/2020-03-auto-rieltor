@@ -21,6 +21,9 @@
             width: 100%;
             padding-right: 0;
         }
+        @media screen and (max-width: 579px) {
+            padding-top: 40px;
+        }
         &:before {
             content: "";
             position: absolute;
@@ -39,6 +42,9 @@
         display: flex;
         flex-wrap: wrap;
         margin-top: 106px;
+        @media screen and (max-width: 579px) {
+            margin-top: 40px;
+        }
     }
     &__item {
         width: 48%;
@@ -47,6 +53,10 @@
         @media screen and (max-width: 979px) {
             width: 50%;
             padding-right: 5%;
+        }
+        @media screen and (max-width: 579px) {
+            width: 100%;
+            margin-bottom: 30px;
         }
     }
     &__title {
@@ -74,6 +84,9 @@
         @media screen and (max-width: 979px) {
             width: 100%;
             padding: 130px 0 70px 60px;
+        }
+        @media screen and (max-width: 579px) {
+            padding: 40px 0;
         }
         .btn {
             min-width: 205px;

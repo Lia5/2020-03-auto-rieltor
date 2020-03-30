@@ -2,6 +2,9 @@
     padding: 69px 0;
     background: $accent;
     color: #e0cdcd;
+    @media screen and (max-width: 579px) {
+        padding: 40px 0;
+    }
     &__items {
         display: flex;
         justify-content: space-between;
@@ -24,6 +27,11 @@
             max-width: none;
             margin-bottom: 30px;
             background-size: 31px 31px;
+        }
+        @media screen and (max-width: 579px) {
+            padding-left: 44px;
+            font-size: 15px;
+            line-height: 20px;
         }
     }
 }

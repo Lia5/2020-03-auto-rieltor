@@ -4,6 +4,9 @@
     @media screen and (max-width: 1239px) {
         padding: 70px 0 90px;
     }
+    @media screen and (max-width: 579px) {
+        padding: 40px 0;
+    }
     &__items {
         display: flex;
         margin-top: 100px;
@@ -13,6 +16,9 @@
             justify-content: center;
             margin-top: 50px;
             padding-bottom: 40px;
+        }
+        @media screen and (max-width: 579px) {
+            margin-top: 30px;
         }
     }
     &__item {
@@ -34,13 +40,19 @@
             margin-bottom: 30px;
             padding: 5%;
         }
-
+        @media screen and (max-width: 579px) {
+            width: 100%;
+            min-height: 160px;
+        }
         &:nth-child(1) {
             background-image: url('../img/how1.jpg');
         }
         &:nth-child(2) {
             background-image: url('../img/how2.jpg');
             margin-left: 30px;
+            @media screen and (max-width: 579px) {
+                margin-left: 0;
+            }
         }
         &:nth-child(3) {
             background-image: url('../img/how3.jpg');
@@ -52,6 +64,9 @@
         &:nth-child(4) {
             margin-left: 30px;
             background-image: url('../img/how4.jpg');
+            @media screen and (max-width: 579px) {
+                margin-left: 0;
+            }
         }
 
     }
@@ -68,9 +83,15 @@
     &__body {
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width: 579px) {
+            flex-wrap: wrap;
+        }
     }
     &__block {
         width: 46%;
+        @media screen and (max-width: 579px) {
+            width: 100%;
+        }
         &:nth-child(2) {
             padding-left: 2%;
         }
@@ -99,6 +120,9 @@
         font-weight: 700;
         margin-top: 40px;
         margin-bottom: 48px;
+        @media screen and (max-width: 579px) {
+            text-align: center;
+        }
     }
     &__lists {
         li {

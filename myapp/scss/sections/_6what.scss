@@ -4,6 +4,9 @@
     background-position: left bottom;
     background-size: cover;
     color: #ffffff;
+    @media screen and (max-width: 579px) {
+        padding: 40px 0;
+    }
     .wrap {
         max-width: 1290px;
     }
@@ -43,6 +46,11 @@
         @media screen and (max-width: 1239px) {
             width: 46%;
         }
+        @media screen and (max-width: 579px) {
+            width: 100%;
+            padding: 30px 20px;
+            margin: 10px 0;
+        }
     }
     &__num {
         position: absolute;
@@ -55,6 +63,9 @@
         margin-bottom: 14px;
         svg {
             max-width: 100%;
+        }
+        @media screen and (max-width: 579px) {
+            width: 55px;
         }
     }
 }

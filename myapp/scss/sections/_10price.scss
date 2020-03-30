@@ -4,6 +4,9 @@
     @media screen and (max-width: 1239px) {
         padding: 70px 0 20px;
     }
+    @media screen and (max-width: 579px) {
+        padding: 40px 0 0;
+    }
     &__body {
         display: flex;
         @media screen and (max-width: 979px) {
@@ -16,6 +19,7 @@
         padding-right: 23px;
         @media screen and (max-width: 979px) {
             width: 100%;
+            padding-right: 0;
         }
         p {
             max-width: 240px;
@@ -26,6 +30,9 @@
             @media screen and (max-width: 979px) {
                 margin-bottom: 0;
             }
+            @media screen and (max-width: 579px) {
+                margin-bottom: 20px;
+            }
         }
     }
     &__pic {
@@ -35,6 +42,9 @@
         }
         @media screen and (max-width: 724px) {
             height: 270px;
+        }
+        @media screen and (max-width: 579px) {
+            margin-bottom: 20px; 
         }
         &:after {
             content: "";
@@ -56,6 +66,12 @@
             @media screen and (max-width: 724px) {
                 top: -50px;
             }
+            @media screen and (max-width: 579px) {
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+            }
         }
     }
     &__services {
@@ -71,6 +87,9 @@
         line-height: 40px;
         font-weight: 200;
         margin-bottom: 78px;
+        @media screen and (max-width: 579px) {
+            text-align: center;
+        }
     }
     &__top {
         display: flex;
@@ -80,9 +99,15 @@
         padding: 5px 0 13px;
         margin-bottom: 22px;
         border-bottom: 1px solid #aeaeae;
+        @media screen and (max-width: 579px) {
+            display: block;
+        }
     }
     &__title {
         font-size: 18px;
+        @media screen and (max-width: 579px) {
+            margin-bottom: 20px;
+        }
     }
     &__sum {
         font-size: 30px;
@@ -98,9 +123,15 @@
     &__items {
         display: flex;
         margin-bottom: 39px;
+        @media screen and (max-width: 579px) {
+            flex-wrap: wrap;
+        }
     }
     &__group {
         width: 50%;
+        @media screen and (max-width: 579px) {
+            width: 100%;
+        }
     }
     &__item {
         position: relative;
