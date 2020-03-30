@@ -9,10 +9,19 @@
     }
     &__body {
         display: flex;
+        @media screen and (max-width: 979px) {
+            flex-wrap: wrap;
+        }
     }
     &__block {
         width: 31%;
         padding: 72px 5% 10px 2%;
+        @media screen and (max-width: 979px) {
+            width: 100%;
+            margin-bottom: 30px;
+            padding-top: 0;
+        }
+
     }
     &__title {
         margin-top: 41px;
@@ -21,6 +30,9 @@
         display: flex;
         flex-wrap: wrap;
         width: 69%;
+        @media screen and (max-width: 979px) {
+            width: 100%;
+        }
     }
     &__item {
         width: 29%;

@@ -6,21 +6,36 @@
     }
     &__body {
         display: flex;
+        @media screen and (max-width: 979px) {
+            flex-wrap: wrap;
+        }
     }
     &__block {
         width: 35%;
         padding-top: 5px;
         padding-right: 23px;
+        @media screen and (max-width: 979px) {
+            width: 100%;
+        }
         p {
             max-width: 240px;
             margin: 36px 0 93px 0;
             font-size: 18px;
             line-height: 30px;
             font-weight: 200;
+            @media screen and (max-width: 979px) {
+                margin-bottom: 0;
+            }
         }
     }
     &__pic {
         position: relative;
+        @media screen and (max-width: 979px) {
+            height: 350px;
+        }
+        @media screen and (max-width: 724px) {
+            height: 270px;
+        }
         &:after {
             content: "";
             position: absolute;
@@ -34,11 +49,22 @@
             @media screen and (max-width: 1400px) {
                 width: 110%;
             }
+            @media screen and (max-width: 979px) {
+                width: 50%;
+                top: -90px;
+            }
+            @media screen and (max-width: 724px) {
+                top: -50px;
+            }
         }
     }
     &__services {
         width: 65%;
         padding: 0 5% 0 7%;
+        @media screen and (max-width: 979px) {
+            width: 100%;
+            padding: 0;
+        }
     }
     &__header {
         font-size: 30px;

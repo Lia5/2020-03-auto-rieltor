@@ -79,11 +79,19 @@
         display: flex;
         justify-content: space-between;
         max-width: 289px;
+        @media screen and (max-width: 979px) {
+            max-width: none;
+            display: block;
+        }
     }
     &__har-item {
         width: 33%;
         padding-right: 15px;
         padding-left: 15px;
+        @media screen and (max-width: 979px) {
+            display: flex;
+            border-left: 1px solid #e8e8e8;
+        }
         &+.prod__har-item {
             border-left: 1px solid #e8e8e8;
         }
@@ -93,5 +101,8 @@
         line-height: 14px;
         font-weight: 50;
         margin-bottom: 10px;
+        @media screen and (max-width: 979px) {
+            margin-right: 20px;
+        }
     }
 }

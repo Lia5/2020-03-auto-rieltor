@@ -12,13 +12,16 @@
     }
     &__body {
         display: flex;
-        @media screen and (max-width: 579px) {
-            // flex-wrap: wrap;
+        @media screen and (max-width: 979px) {
+            flex-wrap: wrap;
         }
     }
     &__about {
         width: 57%;
         padding-top: 87px;
+        @media screen and (max-width: 979px) {
+            width: 100%;
+        }
         .title {
             margin-bottom: 44px;
         }
@@ -71,6 +74,9 @@
         padding: 102px 0 110px 109px;
         position: relative;
         z-index: 1;
+        @media screen and (max-width: 979px) {
+            width: 100%;
+        }
         &:before {
             content: "";
             position: absolute;

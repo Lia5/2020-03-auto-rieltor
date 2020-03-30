@@ -12,6 +12,7 @@
             flex-wrap: wrap;
             justify-content: center;
             margin-top: 50px;
+            padding-bottom: 40px;
         }
     }
     &__item {
@@ -77,6 +78,9 @@
     &__pic {
         min-height: 321px;
         display: flex;
+        @media screen and (max-width: 979px) {
+            min-height: 245px;
+        }
         img {
             margin: auto;
             @media screen and (max-width: 1315px) {
