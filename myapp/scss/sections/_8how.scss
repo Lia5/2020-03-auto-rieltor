@@ -1,10 +1,18 @@
 .how {
     background: #f2f2f2;
     padding: 141px 0 157px;
+    @media screen and (max-width: 1239px) {
+        padding: 70px 0 90px;
+    }
     &__items {
         display: flex;
         margin-top: 100px;
         padding-bottom: 120px;
+        @media screen and (max-width: 979px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+        }
     }
     &__item {
         display: flex;
@@ -17,21 +25,34 @@
         flex-grow: 1;
         flex-basis: 0;
         border-radius: 6px;
+        @media screen and (max-width: 979px) {
+            flex-grow: unset;
+            flex-basis: unset;
+            width: 46%;
+            width: calc(50% - 30px);
+            margin-bottom: 30px;
+            padding: 5%;
+        }
+
         &:nth-child(1) {
             background-image: url('../img/how1.jpg');
         }
         &:nth-child(2) {
             background-image: url('../img/how2.jpg');
+            margin-left: 30px;
         }
         &:nth-child(3) {
             background-image: url('../img/how3.jpg');
+            margin-left: 30px;
+            @media screen and (max-width: 979px) {
+                margin-left: 0;
+            }
         }
         &:nth-child(4) {
+            margin-left: 30px;
             background-image: url('../img/how4.jpg');
         }
-        &+.how__item {
-            margin-left: 30px;
-        }
+
     }
     &__num {
         opacity: 0.6;
@@ -58,9 +79,15 @@
         display: flex;
         img {
             margin: auto;
+            @media screen and (max-width: 1315px) {
+                max-width: 100%;
+            }
         }
         &--ua {
             margin-left: -68px;
+            @media screen and (max-width: 1315px) {
+                margin-left: 0;
+            }
         }
     }
     &__title {

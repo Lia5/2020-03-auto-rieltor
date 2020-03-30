@@ -1,7 +1,14 @@
 .why {
     background: #f3f3f3;
+
+    @media screen and (max-width: 1487px) {
+        overflow: hidden;
+    }
     &__body {
         display: flex;
+        @media screen and (max-width: 979px) {
+            flex-wrap: wrap;
+        }
     }
     &__advantages {
         position: relative;
@@ -10,6 +17,10 @@
         background: #32313f;
         padding: 154px 40px 59px 0;
         z-index: 1;
+        @media screen and (max-width: 979px) {
+            width: 100%;
+            padding-right: 0;
+        }
         &:before {
             content: "";
             position: absolute;
@@ -19,6 +30,9 @@
             right: 0;
             background: #32313f;
             z-index: -1;
+            @media screen and (max-width: 979px) {
+                right: -10%;
+            }
         }
     }
     &__items {
@@ -53,6 +67,9 @@
         width: 37%;
         padding: 310px 0px 20px 60px;
         z-index: 1;
+        @media screen and (max-width: 979px) {
+            width: 100%;
+        }
         .btn {
             min-width: 205px;
         }
@@ -76,6 +93,9 @@
             background: $accent url('../img/shield.jpg') no-repeat;
             background-size: cover;
             z-index: -1;
+            @media screen and (max-width: 1400px) {
+                width: 100%;
+            }
         }
     }
     &__about {

@@ -6,6 +6,10 @@
         display: flex;
         justify-content: space-between;
         max-width: 1124px;
+
+        @media screen and (max-width: 979px) {
+            flex-wrap: wrap;
+        }
     }
     &__item {
         max-width: 300px;
@@ -16,5 +20,10 @@
         background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Capa_1' x='0px' y='0px' viewBox='0 0 448 448' style='enable-background:new 0 0 448 448;' xml:space='preserve' fill='%239696d7'%3e%3cg%3e%3cg%3e%3cpolygon points='341.333,192.96 341.333,381.12 42.667,381.12 42.667,82.453 308.693,82.453 355.627,39.787 0,39.787 0,423.787 384,423.787 384,153.707 '/%3e%3c/g%3e%3c/g%3e%3cg%3e%3cg%3e%3cpolygon points='417.493,24.213 186.027,234.56 113.493,162.24 85.333,190.4 187.947,293.013 448,54.08 '/%3e%3c/g%3e%3c/g%3e%3c/svg%3e");
         background-size: 40px 40px;
         background-repeat: no-repeat;
+        @media screen and (max-width: 979px) {
+            max-width: none;
+            margin-bottom: 30px;
+            background-size: 31px 31px;
+        }
     }
 }

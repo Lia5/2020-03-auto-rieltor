@@ -4,12 +4,18 @@
     background-position: center center;
     background-size: cover;
     color: #ffffff;
+    @media screen and (max-width: 1239px) {
+        padding-bottom: 70px;
+    }
     .wrap {
         max-width: 1350px;
     }
     &__items {
         display: flex;
         margin: 76px 0 0;
+        @media screen and (max-width: 1239px) {
+            flex-wrap: wrap;
+        }
     }
     &__item {
         font-weight: 700;
@@ -19,5 +25,12 @@
         background-repeat: no-repeat;
         flex-grow: 1;
         flex-basis: 0;
+
+        @media screen and (max-width: 1239px) {
+            flex-grow: unset;
+            flex-basis: unset;
+            width: 50%;
+            margin-bottom: 40px;
+        }
     }
 }

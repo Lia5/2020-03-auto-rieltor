@@ -1,6 +1,9 @@
 .services {
     padding: 68px 0 160px;
     background: #f2f2f2;
+    @media screen and (max-width: 1239px) {
+        padding: 50px 0 70px;
+    }
     .title {
         font-weight: 200;
         margin-bottom: 20px;
@@ -14,11 +17,22 @@
         display: flex;
         justify-content: space-between;
         margin-top: -20px;
+        @media screen and (max-width: 1239px) {
+            margin-top: 0;
+        }
     }
     &__block {
         width: 50%;
+        &:nth-child(1){
+            @media screen and (max-width: 1239px) {
+                width: 43%;
+            }
+        }
         &:nth-child(2){
             padding-left: 5%;
+            @media screen and (max-width: 1239px) {
+                padding-left: 0;
+            }
         }
     }
     &__pic {
@@ -26,9 +40,15 @@
         display: flex;
         img {
             margin: auto;
+            @media screen and (max-width: 1400px) {
+                max-width: 100%;
+            }
         }
         &--ua {
             margin-left: -50px;
+            @media screen and (max-width: 1400px) {
+                margin-left: 0;
+            }
         }
     }
     &__title {

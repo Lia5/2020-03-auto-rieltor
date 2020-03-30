@@ -1,6 +1,9 @@
 .price {
     padding: 214px 0 80px;
     background: #f2f2f2;
+    @media screen and (max-width: 1239px) {
+        padding: 70px 0 20px;
+    }
     &__body {
         display: flex;
     }
@@ -27,6 +30,10 @@
             height: 596px;
             background: url('../img/price-bg.jpg') no-repeat;
             background-size: contain;
+
+            @media screen and (max-width: 1400px) {
+                width: 110%;
+            }
         }
     }
     &__services {

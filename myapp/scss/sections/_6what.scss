@@ -28,6 +28,9 @@
         background: #32323f;
         padding: 43px 14px 43px 43px;
         margin: 2% 2%;
+        @media screen and (max-width: 1239px) {
+            width: 46%;
+        }
     }
     &__num {
         position: absolute;

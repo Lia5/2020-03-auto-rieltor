@@ -1,5 +1,8 @@
 .prod {
     padding: 130px 0 150px;
+    @media screen and (max-width: 1239px) {
+        padding: 70px 0 90px;
+    }
     .title {
         margin-bottom: 24px;
     }
@@ -14,6 +17,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @media screen and (max-width: 1239px) {
+            margin-bottom: 50px;
+        }
         li {
             opacity: 0.4;
             margin: 0 38px;
@@ -38,6 +44,9 @@
     }
     &__body {
         margin: 104px 0 0;
+        @media screen and (max-width: 1239px) {
+            margin-top: 50px;
+        }
     }
     &__items {
         display: flex;
@@ -62,6 +71,7 @@
         display: flex;
         img {
             margin: auto;
+            max-width: 100%;
 
         }
     }

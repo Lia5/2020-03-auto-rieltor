@@ -3,16 +3,34 @@
     background: url('../img/by.png') no-repeat;
     background-position: right bottom -126px;
     background-color: #f8f8f8;
+    @media screen and (max-width: 1919px) {
+        background-size: 44vw;
+    }
+
+    @media screen and (max-width: 1423px) {
+        padding: 20px 0 60px;
+    }
+    @media screen and (max-width: 979px) {
+        padding-bottom: 248px;
+    background-position: right bottom -86px;
+    }
     &__body {
         display: flex;
         flex-wrap: wrap;
         margin: 98px 0 122px;
         max-width: 1000px;
+        @media screen and (max-width: 979px) {
+            margin: 60px auto 40px;
+        }
     }
     &__list {
         width: 30%;
         padding: 16px 8% 54px 0;
         position: relative;
+        @media screen and (max-width: 979px) {
+            width: 33%;
+            padding: 16px 4% 30px 0;
+        }
         &:after {
             content: "";
             position: absolute;
@@ -28,6 +46,15 @@
         display: flex;
         flex-wrap: wrap;
         margin-top: 57px;
+        @media screen and (max-width: 1919px) {
+            width: 52vw;
+        }
+        @media screen and (max-width: 1239px) {
+            width: 66vw;
+        }
+        @media screen and (max-width: 979px) {
+            width: 100%;
+        }
     }
     &__item {
         width: 50%;

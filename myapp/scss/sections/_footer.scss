@@ -2,6 +2,10 @@
    display: flex;
    justify-content: space-between;
    padding: 151px 0 0;
+
+   @media screen and (max-width: 1239px) {
+        padding-top: 70px;
+    }
    p {
        margin: 0;
        line-height: 20px;

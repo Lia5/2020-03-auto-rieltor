@@ -89,8 +89,6 @@ $(function() {
             $('body').addClass('body-modal-open');
             // body.addClass('body-modal');
 
-            
-          
         });
       
         $('.modal-close').click(function (){
