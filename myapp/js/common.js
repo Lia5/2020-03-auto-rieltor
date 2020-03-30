@@ -138,9 +138,12 @@ $(function() {
 
 
     //click on form submit button - AMO
-    $('.kviz__btn').on('click', function(){
-        $($(this).parent().parent()).each(function () {
+    $('.kviz__btn').on('click', function(e){
+        e.preventDefault();
+        var btn = $(this);
+        $($(this).parent().parent().parent()).each(function () {
             var form = $(this);
+            console.log(form);
             form.find('.rfield').addClass('empty_field');
 
                 // Функция проверки полей формы
@@ -148,29 +151,41 @@ $(function() {
                 form.find('.rfield').each(function(){
                 if($(this).val() != ''){
                     // Если поле не пустое удаляем класс-указание
-                $(this).removeClass('empty_field');
+                    $(this).removeClass('empty_field');
 
                 if (!form.find('.empty_field').length) {
-                console.log('form');
-                form = $('.quizForm');
-                jQuery.ajax({
-                    method: "POST",
-                    data: form.serialize(),
-                    // url: quizAjax.url,
-                    url: '../sendamo.php',
-                    dataType: "json",
-                    success: function (json) {
-                        // if (json.success) {
-                            // jQuery(".wizard-section").fadeOut(100);
-                            window.location.href = "/quiz-thanks/";
-                        // }
+                    var numModal = btn.attr('href');
+                    var modal =  $(numModal);
+                    var modalWrap = $('.modal__wrap');
+                    modalWrap.removeClass('fadeOutUp');
+                    modalWrap.addClass('fadeInDown');
+                    $('.modal').addClass('disabled');
+                    modal.removeClass('disabled');
+                    modal.addClass('flex');
+                    $('body').addClass('body-modal-open');
+                   
+                    form2 = form.closest('form');
+                    jQuery.ajax({
+                        method: "POST",
+                        data: form2.serialize(),
+                        // url: quizAjax.url,
+                        url: '../sendamo.php',
+                        dataType: "json",
+                        success: function (json) {
+                            // if (json.success) {
+                                // jQuery(".wizard-section").fadeOut(100);
+                                window.location.href = "/quiz-thanks/";
+                            // }
+                        }
+                    });
+                    fbq('track', 'Lead');
+                    btn.attr('href', "#").removeClass('kviz__btn').css('pointer-events', 'none');
+                    btn.parent().css('opacity', '0.5').css('pointer-events', 'none');
                     }
-                });
                 // fbq('track', 'Lead');
-                }
 
                 } else {}
-                });
+            });
         })
     });
 

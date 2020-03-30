@@ -19,7 +19,22 @@
           <div class="home__pre">Совсем не разбираетесь в автомобилях и боитесь купить “кота в мешке”?</div>
           <div class="home__title">Помогаем выбрать б/у авто в Украине или доставить  <span class="desctop-br"><br></span>из США, Европы или Канады</div>
           <div class="home__text">Используем свой опыт и ресурсы, чтобы сохранить ваши деньги и нервы приобретая автомобиль.</div>
-          <div class="home__btn"><a href="#consult" class="btn scroll-to">Получить консультацию</a></div>
+          <form action="">
+            <input type="hidden" name="utm_source" class="utm_source hidden">
+            <input type="hidden" name="utm_medium" class="utm_medium hidden">
+            <input type="hidden" name="utm_campaign" class="utm_campaign hidden">
+            <input type="hidden" name="utm_term" class="utm_term hidden">
+            <input type="hidden" name="utm_content" class="utm_content hidden">
+            <input type="hidden" name="info" value="Приватна консультація">
+            <div class="form home__form">
+              <div class="form-line"> 
+                <label><span>телефон</span>
+                  <input type="text" placeholder="+38 (093) 333 33 33" name="phone" required class="rfield phone-mask">
+                </label>
+              </div>
+              <button type="submit" class="home__btn btn-finish"><a href="#modalConsult" class="btn kviz__btn">Получить консультацию</a></button>
+            </div>
+          </form>
         </div>
       </div>
     </header>
@@ -844,7 +859,7 @@
                   <label for="#modal__agree">Я даю згоду на  <span>обробку персональних даних</span></label>
                 </div>
                 <div class="form-line-wrap">
-                  <button type="submit" class="btn btn--white btn-finish"><a href="#modalFinish" class="kviz__btn">Оставить заявку</a></button>
+                  <button type="submit" class="btn btn--white btn-finish"><a href="#modalConsult" class="kviz__btn">Оставить заявку</a></button>
                 </div>
               </div>
             </form>
@@ -876,6 +891,22 @@
           <div class="modal__body-pic"></div>
           <div class="modal__title">Заявка отправлена!</div>
           <div class="modal__subtitle">Мы уже приступили к подбору автомобилей. Менеджер свяжется с вами по указанному номеру телефона, чтобы сообщить результат</div>
+        </div>
+      </div>
+    </div>
+    <div id="modalConsult" class="modal disabled">
+      <div class="modal__wrap animated fadeInDown">   
+        <div class="close modal-close">
+          <svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="t-popup__close-icon">
+            <g stroke="none" stroke-width="1" fill-rule="evenodd">
+              <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+              <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+            </g>
+          </svg>
+        </div>
+        <div class="modal__body">
+          <div class="modal__title">Cпасибо за заявку!  </div>
+          <div class="modal__subtitle">Мы свяжемся <br> с вами в ближайшее время</div>
         </div>
       </div>
     </div>
