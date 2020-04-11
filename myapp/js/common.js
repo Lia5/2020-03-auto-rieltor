@@ -18,19 +18,6 @@ $(function() {
 
 
 
-document.addEventListener('DOMContentLoaded', function(){
-//menu
-    var menu = document.querySelector('.menu-toggle');
-    menu.addEventListener('click', function(){
-        var nav = document.querySelector('.main-menu');
-        nav.classList.toggle('active');
-        var navGamb = document.querySelector('.menu-toggle');
-        navGamb.classList.toggle('active');
-    });
-
-
-});
-
 $(function() {
     //select-number form
     if(jQuery('.phone-mask').length) {
@@ -136,6 +123,47 @@ $(function() {
         });
     }
 
+    // UTM
+    function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++) {
+            var pair = vars[i].split("=");
+            if(pair[0] == variable){return pair[1];}
+        }
+        return(false);
+    }
+
+    $('form').find('input.utm_source').each(function() {
+        var a = getQueryVariable('utm_source');
+        if(a){
+            $(this).val(a);
+        }
+    }); 
+    $('form').find('input.utm_medium').each(function() {
+        var a = getQueryVariable('utm_medium');
+        if(a){
+            $(this).val(a);
+        }
+    });
+    $('form').find('input.utm_campaign').each(function() {
+        var a = getQueryVariable('utm_campaign');
+        if(a){
+            $(this).val(a);
+        }
+    });
+    $('form').find('input.utm_term').each(function() {
+        var a = getQueryVariable('utm_term');
+        if(a){
+            $(this).val(a);
+        }
+    });
+    $('form').find('input.utm_content').each(function() {
+        var a = getQueryVariable('utm_content');
+        if(a){
+            $(this).val(a);
+        }
+    });
 
     //click on form submit button - AMO
     $('.kviz__btn').on('click', function(e){
@@ -169,16 +197,16 @@ $(function() {
                         method: "POST",
                         data: form2.serialize(),
                         // url: quizAjax.url,
-                        url: '../sendamo.php',
-                        dataType: "json",
-                        success: function (json) {
-                            // if (json.success) {
-                                // jQuery(".wizard-section").fadeOut(100);
-                                window.location.href = "/quiz-thanks/";
-                            // }
-                        }
+                        url: '../send.php',
+                        // dataType: "json",
+                        // success: function (json) {
+                        //     // if (json.success) {
+                        //         // jQuery(".wizard-section").fadeOut(100);
+                        //         window.location.href = "/quiz-thanks/";
+                        //     // }
+                        // }
                     });
-                    fbq('track', 'Lead');
+                    // fbq('track', 'Lead');
                     btn.attr('href', "#").removeClass('kviz__btn').css('pointer-events', 'none');
                     btn.parent().css('opacity', '0.5').css('pointer-events', 'none');
                     }

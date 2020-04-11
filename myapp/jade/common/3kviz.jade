@@ -2,7 +2,7 @@ section.kviz#kviz
     .wrap
         .kviz__title Ответьте на 5 вопросов и получите подборку из трех доступных к покупке автомобилей
         .kviz-qa
-            form(class="quizForm")
+            form(class="quizForm" action="send.php" method="post")
                 .step-slide.step-slide--active
                     .step__body
                         .step-slide__title Какой у вас бюджет на покупку авто?
@@ -92,25 +92,25 @@ section.kviz#kviz
                         .step-slide__title Выберите один или несколько пунктов, которые соответствуют вашей ситуации
                         .kviz__ans.question__ans--text
                             label.pick-item(for="step4-1")
-                                input#step4-1.pick-item__input(type='checkbox', name='question4', value='Я буду возить в авто ребенка  или нескольких детей ')
+                                input#step4-1.pick-item__input(type='checkbox', name='question4-1', value='Я буду возить в авто ребенка  или нескольких детей ')
                                 span.pick-item__label Я буду возить в авто ребенка  или нескольких детей 
                             label.pick-item(for="step4-2")
-                                input#step4-2.pick-item__input(type='checkbox', name='question4', value='Я буду возить в авто собаку  или другое крупное животное')
+                                input#step4-2.pick-item__input(type='checkbox', name='question4-2', value='Я буду возить в авто собаку  или другое крупное животное')
                                 span.pick-item__label Я буду возить в авто собаку  или другое крупное животное
                             label.pick-item(for="step4-3")
-                                input#step4-3.pick-item__input(type='checkbox', name='question4', value='Я хочу путешествовать  на автомобиле ')
+                                input#step4-3.pick-item__input(type='checkbox', name='question4-3', value='Я хочу путешествовать  на автомобиле ')
                                 span.pick-item__label Я хочу путешествовать  на автомобиле 
                             label.pick-item(for="step4-4")
-                                input#step4-4.pick-item__input(type='checkbox', name='question4', value='Я собираюсь использовать  авто только для личных дел')
+                                input#step4-4.pick-item__input(type='checkbox', name='question4-4', value='Я собираюсь использовать  авто только для личных дел')
                                 span.pick-item__label Я собираюсь использовать  авто только для личных дел
                             label.pick-item(for="step4-5")
-                                input#step4-5.pick-item__input(type='checkbox', name='question4', value='На автомобиле будет  ездить новичок')
+                                input#step4-5.pick-item__input(type='checkbox', name='question4-5', value='На автомобиле будет  ездить новичок')
                                 span.pick-item__label На автомобиле будет  ездить новичок
                             label.pick-item(for="step4-6")
-                                input#step4-6.pick-item__input(type='checkbox', name='question4', value='Я собираюсь эксплуатировать  автомобиль больше 3 лет')
+                                input#step4-6.pick-item__input(type='checkbox', name='question4-6', value='Я собираюсь эксплуатировать  автомобиль больше 3 лет')
                                 span.pick-item__label Я собираюсь эксплуатировать  автомобиль больше 3 лет
                             label.pick-item(for="step4-7")
-                                input#step4-7.pick-item__input(type='checkbox', name='question4', value='В перспективе я хочу продать  авто и купить что-то лучше')
+                                input#step4-7.pick-item__input(type='checkbox', name='question4-7', value='В перспективе я хочу продать  авто и купить что-то лучше')
                                 span.pick-item__label В перспективе я хочу продать  авто и купить что-то лучше 
                         .step-slide__bottom
                             .kviz-progress
@@ -162,7 +162,7 @@ section.kviz#kviz
                             .form-line
                                 label
                                     span Имя
-                                    input(type="text" placeholder="Как вас зовут" name="name2" required).rfield
+                                    input(type="text" placeholder="Как вас зовут" name="name" required).rfield
                                 label
                                     span телефон
                                     input(type="text" placeholder="+38 (093) 333 33 33" name="phone" required).rfield.phone-mask

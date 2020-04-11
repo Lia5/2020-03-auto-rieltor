@@ -124,6 +124,9 @@
                 margin-right: auto;
             }
         }
+        input {
+            color: #fff;
+        }
     }
 
 
@@ -189,8 +192,10 @@
     color: #fff;
     position: relative;
     margin-top: 24px;
-    span {
+    a {
+        display: inline-block;
         text-decoration: underline;
+        color: #fff;
     }
     input {
         display: none;

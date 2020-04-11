@@ -12,19 +12,19 @@ section.consult#consult
                     a(href="tel:+380989997469") (098) 999 74 69
                     a(href="mailto:auto-rieltor@gmail.com") auto-rieltor@gmail.com
             .consult__form
-                form(action="")
+                form(action="send.php" method="post")
                     input.utm_source.hidden(type='hidden', name='utm_source')
                     input.utm_medium.hidden(type='hidden', name='utm_medium')
                     input.utm_campaign.hidden(type='hidden', name='utm_campaign')
                     input.utm_term.hidden(type='hidden', name='utm_term')
                     input.utm_content.hidden(type='hidden', name='utm_content')
-                    input(type='hidden', name='info', value='Приватна консультація')
+                    input(type='hidden', name='info', value='последний экран - консультация')
                     .title.title--white Заполните форму и специалист свяжется с вами в ближайшее время
                     .form.step-slide__form
                         .form-line 
                             label
                                 span Имя
-                                input(type="text" placeholder="Как вас зовут" name="name2" required).rfield
+                                input(type="text" placeholder="Как вас зовут" name="name" required).rfield
                             label
                                 span телефон
                                 input(type="text" placeholder="+38 (093) 333 33 33" name="phone" required).rfield.phone-mask
@@ -33,8 +33,8 @@ section.consult#consult
                                 input(type="email" placeholder="example@gmail.com" name="email" required).rfield
                         .agree-line
                             input#modal__agree(type='checkbox', checked='', disabled='')
-                            label(for='#modal__agree') Я даю згоду на  
-                                span обробку персональних даних
+                            label(for='#modal__agree') Я даю согласие на  
+                                a(href="#policy").modal-open обработку персональных данных
                         .form-line-wrap
                             button.btn.btn--white.btn-finish(type="submit")
                                 a(href="#modalConsult").kviz__btn Оставить заявку
