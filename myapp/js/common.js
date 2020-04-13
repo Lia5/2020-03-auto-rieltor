@@ -4,6 +4,8 @@ $(function() {
           .addClass('active').siblings().removeClass('active')
           .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
       });
+
+    //scrollto
     if(jQuery('.scroll-to').length) {
         var $page = $('html, body');
         $('.scroll-to[href*="#"]').click(function() {
@@ -14,29 +16,10 @@ $(function() {
         });
     }
 
-});
-
-
-
-$(function() {
     //select-number form
     if(jQuery('.phone-mask').length) {
         jQuery(function($){
             $(".phone-mask").mask("+38(999) 999-9999");
-        });
-    }
-    //time
-    if (window.innerHeight < 821 || window.screen.height < 821) {
-        $('.time__num').on('click', function(){
-            $(this).parent().siblings().children().removeClass('active');
-            $(this).next().toggleClass('active');
-        });
-        $(document).mouseup(function (e){ // событие клика по веб-документу
-            var div = $(".time__num"); // тут указываем ID элемента
-            if (!div.is(e.target) // если клик был не по нашему блоку
-            && div.has(e.target).length === 0) { // и не по его дочерним элементам
-                $('.time__num').parent().siblings().children().removeClass('active');
-            }
         });
     }
 
@@ -111,17 +94,7 @@ $(function() {
           }
         });
     }
-    //scrollto
-    
-    if(jQuery('.scroll-to').length) {
-        var $page = $('html, body');
-        $('.scroll-to[href*="#"]').click(function() {
-            $page.animate({
-                scrollTop: $($.attr(this, 'href')).offset().top
-            }, 400);
-            return false;
-        });
-    }
+
 
     // UTM
     function getQueryVariable(variable) {
@@ -219,3 +192,48 @@ $(function() {
 
 
 });
+// $(document).mouseleave(function(e) {
+//     $('.modalLeave').removeClass('disabled');
+//     var modalWrap = $('.modalLeave .modal__wrap');
+//     modalWrap.removeClass('fadeOutUp');
+//     modalWrap.addClass('fadeInDown');
+// });
+
+    // функция возвращает cookie с именем name, если есть, если нет, то undefined    
+    function getCookie(name) {
+        var matches = document.cookie.match(new RegExp(
+        "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+        ));
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+    }
+    // проверяем, есть ли у нас cookie, с которой мы не показываем окно и если нет, запускаем показ
+    var alertwin = getCookie("alertwin");
+    console.log(alertwin);
+    if (alertwin != "no") { 
+        $(document).on('mouseleave', function() {
+            $('.modalLeave').removeClass('disabled');
+            var modalWrap = $('.modalLeave .modal__wrap');
+            modalWrap.removeClass('fadeOutUp');
+            modalWrap.addClass('fadeInDown');
+            // записываем cookie на 1 день, с которой мы не показываем окно
+            var date = new Date;
+            date.setDate(date.getDate() + 1);    
+            document.cookie = "alertwin=no; path=/; expires=" + date.toUTCString();
+       
+        });
+        $(document).click(function(e) {
+            if (($(".modalLeave").is(':visible')) && (!$(e.target).closest(".modalLeave .modal__body").length)) {
+                var modalWrap = $('.modalLeave .modal__wrap');
+                modalWrap.removeClass('fadeInDown');
+                modalWrap.addClass('fadeOutUp');
+                setTimeout(function() {
+                    $('.modalLeave').addClass('disabled');
+                }, 700);
+                setTimeout(function() {
+                    $('.modalLeave').removeClass('flex');
+                    $('body').removeClass('body-modal-open');
+                    $(".modalLeave").remove();
+              }, 800); 
+            }
+        });
+    } 
