@@ -1,6 +1,6 @@
 section.kviz#kviz
     .wrap
-        .kviz__title Ответьте на 5 вопросов и получите подборку из трех доступных к покупке автомобилей
+        .kviz__title Ответьте на 5 вопросов и получите 3 варианта автомобиля на выбор
         .kviz-qa
             form(class="quizForm" action="send.php" method="post")
                 .step-slide.step-slide--active
@@ -166,13 +166,13 @@ section.kviz#kviz
                                 label
                                     span телефон
                                     input(type="text" placeholder="+38 (093) 333 33 33" name="phone" required).rfield.phone-mask
-                            .form-line
-                                label
-                                    span ваш город
-                                    input(type="text" placeholder="Киев" name="city" required).rfield
-                                label
-                                    span e-mail
-                                    input(type="email" placeholder="example@gmail.com" name="email" required).rfield
+                            //- .form-line
+                            //-     label
+                            //-         span ваш город
+                            //-         input(type="text" placeholder="Киев" name="city" required).rfield
+                            //-     label
+                            //-         span e-mail
+                            //-         input(type="email" placeholder="example@gmail.com" name="email" required).rfield
                             //- input.btn.btn--orange(type='submit', value='Получить предложение')
                             .agree-line
                                 input#modal__agree(type='checkbox', checked='', disabled='')
